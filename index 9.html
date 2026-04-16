@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Eduard Beches – Projektleiter im Wohnbau. 8 Jahre beim Bauträger, 100+ Mio. € Projektvolumen, Wien 1. & 3. Bezirk. Verfügbar ab sofort.">
+<meta property="og:title" content="Eduard Beches – Projektleiter Wohnbau Wien">
+<meta property="og:description" content="8 Jahre beim Bauträger · 100+ Mio. € Projektvolumen · 200+ Wohneinheiten · Verfügbar ab sofort">
+<meta property="og:image" content="Projektleiter_auf_der_Baustelle.png">
+<meta property="og:type" content="profile">
+<title>Eduard Beches | Projektleiter Baumanagement Wien | Verfügbar ab sofort</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#0e1014;--ink2:#2a2d35;--muted:#6b7280;
+  --border:#e5e7eb;--bg:#fafaf9;--white:#ffffff;
+  --gold:#b8953a;--gold-light:rgba(184,149,58,0.1);--gold-border:rgba(184,149,58,0.3);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,250,249,0.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:64px;display:flex;align-items:center;padding:0 clamp(24px,5vw,80px);justify-content:space-between;}
+.nav-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--ink);letter-spacing:0.04em;text-decoration:none;}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{font-size:13px;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--ink)}
+.nav-cta{background:var(--ink);color:var(--white);padding:10px 22px;border-radius:4px;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s;}
+.nav-cta:hover{background:var(--ink2)}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* HERO */
+.hero{min-height:100svh;display:grid;grid-template-columns:1fr 1fr;padding-top:64px;}
+.hero-left{padding:clamp(60px,8vw,110px) clamp(24px,5vw,80px);display:flex;flex-direction:column;justify-content:center;}
+.hero-eyebrow{font-size:11px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;display:flex;align-items:center;gap:10px;}
+.hero-eyebrow::before{content:'';display:block;width:32px;height:1px;background:var(--gold)}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,6vw,84px);font-weight:700;line-height:0.95;color:var(--ink);margin-bottom:24px;letter-spacing:-0.01em;}
+.hero-name span{display:block;color:var(--gold);font-style:italic}
+.hero-lead{font-size:clamp(14px,1.4vw,16px);font-weight:400;color:var(--ink2);line-height:1.8;max-width:460px;margin-bottom:12px;border-left:2px solid var(--gold);padding-left:18px;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:36px;}
+.hero-tag{font-size:13px;font-weight:500;color:var(--ink2);background:var(--white);border:1px solid var(--border);padding:7px 14px;border-radius:4px;}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-bottom:40px;border:1px solid var(--border);border-radius:6px;overflow:hidden;max-width:460px;}
+.h-stat{padding:16px 12px;text-align:center;border-right:1px solid var(--border);}
+.h-stat:last-child{border-right:none}
+.h-stat-num{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:700;color:var(--ink);line-height:1;margin-bottom:4px;}
+.h-stat-num sup{font-size:15px}
+.h-stat-lbl{font-size:10px;color:var(--muted);letter-spacing:0.04em;line-height:1.4;text-transform:uppercase}
+.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.btn-primary{background:var(--ink);color:var(--white);padding:13px 28px;border-radius:4px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;}
+.btn-primary:hover{background:var(--ink2);transform:translateY(-1px)}
+.btn-ghost{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;transition:.2s;display:flex;align-items:center;gap:6px;padding:13px 24px;border-radius:4px;border:1.5px solid var(--border);}
+.btn-ghost:hover{border-color:var(--ink);background:var(--white);transform:translateY(-1px)}
+.btn-ghost svg{width:16px;height:16px}
+.hero-right{position:relative;overflow:hidden;background:var(--ink);}
+.hero-photo{width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.88;display:block;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(14,16,20,0.15) 0%,transparent 40%),linear-gradient(to top,rgba(14,16,20,0.55) 0%,transparent 50%);}
+.hero-credential{position:absolute;bottom:32px;left:32px;right:32px;background:rgba(255,255,255,0.06);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:16px 20px;display:flex;align-items:center;gap:12px;}
+.credential-icon{width:38px;height:38px;border-radius:5px;background:var(--gold-light);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.credential-icon svg{width:18px;height:18px;color:var(--gold)}
+.credential-text strong{display:block;font-size:13px;font-weight:600;color:white;margin-bottom:2px}
+.credential-text span{font-size:11px;color:rgba(255,255,255,0.45);}
+
+/* SECTIONS */
+section{padding:clamp(80px,10vw,130px) clamp(24px,5vw,80px)}
+.inner{max-width:1100px;margin:0 auto}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,60px);font-weight:700;line-height:1.05;color:var(--ink);margin-bottom:14px;}
+.section-sub{font-size:16px;color:var(--muted);line-height:1.8;max-width:560px}
+.divider{width:56px;height:2px;background:var(--gold);margin:20px 0 44px}
+
+/* NUMBERS BAND */
+.numbers-band{background:var(--ink);padding:clamp(48px,6vw,80px) clamp(24px,5vw,80px);}
+.numbers-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(255,255,255,0.08);border-radius:8px;overflow:hidden;max-width:1100px;margin:0 auto;}
+.num-item{padding:clamp(28px,4vw,48px) 20px;text-align:center;background:var(--ink);border-right:1px solid rgba(255,255,255,0.08);}
+.num-item:last-child{border-right:none}
+.num-big{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,5.5vw,72px);font-weight:700;color:var(--gold);line-height:1;margin-bottom:12px;}
+.num-label{font-size:12px;color:rgba(255,255,255,0.55);line-height:1.55;letter-spacing:0.05em;text-transform:uppercase}
+
+/* ÜBER MICH */
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center}
+.about-img{aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:var(--ink);}
+.about-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
+.about-text{font-size:15px;color:var(--ink2);line-height:1.85;margin-bottom:28px;}
+.about-text p+p{margin-top:14px}
+.about-pillars{display:flex;flex-direction:column;gap:11px}
+.about-pillar{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:var(--ink2);line-height:1.5;}
+.pillar-dot{width:5px;height:5px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:8px;}
+
+/* PROJEKTE */
+.projects{background:var(--bg)}
+.project-card{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:center;padding:clamp(48px,6vw,72px) 0;border-bottom:1px solid var(--border);}
+.project-card:last-child{border-bottom:none}
+.project-card.reverse{direction:rtl}
+.project-card.reverse>*{direction:ltr}
+.project-label{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;}
+.project-name{font-family:'Cormorant Garamond',serif;font-size:clamp(26px,3.2vw,42px);font-weight:700;color:var(--ink);margin-bottom:8px;line-height:1.1;}
+.project-sub{font-size:13px;color:var(--muted);margin-bottom:18px;}
+.project-desc{font-size:15px;color:var(--ink2);line-height:1.8;margin-bottom:22px}
+.project-facts{display:flex;flex-direction:column;gap:9px}
+.project-fact{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--ink2);line-height:1.5;}
+.project-fact::before{content:'';display:block;width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:8px;}
+.project-image{aspect-ratio:4/3;border-radius:6px;overflow:hidden;background:var(--ink);position:relative;}
+.project-image img{width:100%;height:100%;object-fit:cover;display:block}
+.project-badge{position:absolute;top:16px;left:16px;background:rgba(14,16,20,0.75);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.12);padding:6px 13px;border-radius:4px;font-size:11px;font-weight:600;color:white;letter-spacing:0.05em;}
+
+/* FALLBEISPIEL */
+.case{background:var(--ink)}
+.case-title{font-family:'Cormorant Garamond',serif;font-size:clamp(30px,4vw,50px);font-weight:700;line-height:1.1;color:white;margin-bottom:14px;}
+.case-sub-text{font-size:16px;color:rgba(255,255,255,0.4);line-height:1.8;max-width:560px;}
+.case-divider{width:36px;height:1px;background:rgba(184,149,58,0.4);margin:18px 0 52px}
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:start;}
+.case-steps{display:flex;flex-direction:column;gap:0}
+.case-step{display:flex;gap:20px;padding-bottom:30px;position:relative;}
+.case-step:not(:last-child)::after{content:'';position:absolute;left:17px;top:38px;bottom:0;width:1px;background:rgba(255,255,255,0.1);}
+.step-num{width:35px;height:35px;border-radius:50%;border:1px solid rgba(184,149,58,0.4);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;color:var(--gold);flex-shrink:0;}
+.step-body strong{display:block;font-size:15px;font-weight:600;color:white;margin-bottom:5px;}
+.step-body p{font-size:14px;color:rgba(255,255,255,0.4);line-height:1.7}
+.case-result{background:rgba(255,255,255,0.04);border:1px solid rgba(184,149,58,0.2);border-radius:8px;padding:28px 30px;}
+.case-result-label{font-size:10px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;}
+.case-result h4{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:white;margin-bottom:12px;line-height:1.2}
+.case-result p{font-size:14px;color:rgba(255,255,255,0.45);line-height:1.75}
+.case-result ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.case-result li{display:flex;gap:10px;font-size:14px;color:rgba(255,255,255,0.5);line-height:1.5;}
+.case-result li::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0}
+
+/* EIGENPROJEKT */
+.own{background:var(--bg)}
+.own-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:start;margin-top:clamp(40px,5vw,64px);}
+.own-text{font-size:15px;color:var(--ink2);line-height:1.8;margin-bottom:24px;}
+.own-text p+p{margin-top:12px}
+.own-facts{display:flex;flex-direction:column;gap:9px}
+.own-fact{display:flex;align-items:flex-start;gap:10px;font-size:14px;color:var(--ink2);line-height:1.5;}
+.own-fact::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0;font-size:12px;margin-top:1px;}
+.room-tabs{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px;}
+.room-tab{padding:6px 15px;border-radius:3px;border:1px solid var(--border);font-size:12px;font-weight:500;color:var(--muted);background:var(--white);cursor:pointer;transition:.2s;}
+.room-tab.active{background:var(--ink);color:white;border-color:var(--ink)}
+.ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.ba-label-tag{font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;padding:4px 10px;border-radius:3px;display:inline-block;margin-bottom:8px;width:fit-content;}
+.ba-label-tag.vor{background:rgba(180,60,40,0.1);color:#b43c28}
+.ba-label-tag.nach{background:rgba(46,125,74,0.1);color:#2e7d4a}
+.ba-img{aspect-ratio:4/3;border-radius:5px;overflow:hidden;background:var(--border);cursor:pointer;transition:transform .25s;}
+.ba-img:hover{transform:scale(1.02)}
+.ba-img img{width:100%;height:100%;object-fit:cover;display:block}
+
+/* VERTRIEB */
+.sales{background:var(--white)}
+.sales-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:center;margin-top:clamp(40px,5vw,64px);}
+.sales-number{font-family:'Cormorant Garamond',serif;font-size:clamp(60px,8vw,96px);font-weight:700;color:var(--border);line-height:1;margin-bottom:8px;}
+.sales-number span{font-size:0.45em;color:var(--gold);vertical-align:super}
+.sales-context{font-size:15px;color:var(--muted);line-height:1.85}
+.sales-context strong{color:var(--ink)}
+.sales-items{display:flex;flex-direction:column;gap:14px}
+.sales-item{border:1px solid var(--border);border-radius:5px;padding:18px 22px;}
+.sales-item h4{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:5px}
+.sales-item p{font-size:14px;color:var(--muted);line-height:1.7}
+
+/* DIGITAL */
+.digital{background:var(--bg)}
+.digital-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:clamp(40px,5vw,64px);}
+.digital-card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:26px;transition:box-shadow .25s;}
+.digital-card:hover{box-shadow:0 6px 24px rgba(0,0,0,0.06)}
+.digital-icon{font-size:24px;margin-bottom:14px}
+.digital-card h4{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:8px}
+.digital-card p{font-size:14px;color:var(--muted);line-height:1.7}
+
+/* QUALIFIKATION */
+.quals{background:var(--white)}
+.quals-main{background:var(--bg);border:1px solid var(--border);border-radius:8px;padding:clamp(28px,4vw,44px);margin-top:clamp(40px,5vw,64px);margin-bottom:24px;}
+.quals-main-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:14px;}
+.quals-main-text{font-size:15px;color:var(--ink2);line-height:1.8;max-width:700px;}
+.quals-main-text p+p{margin-top:12px}
+.quals-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.qual-badge{display:inline-flex;align-items:center;gap:7px;background:var(--gold-light);border:1px solid var(--gold-border);padding:6px 14px;border-radius:3px;font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.04em;}
+.quals-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.qual-card{border:1px solid var(--border);border-radius:6px;padding:24px;transition:box-shadow .25s;}
+.qual-card:hover{box-shadow:0 6px 24px rgba(0,0,0,0.06)}
+.qual-year{font-size:11px;font-weight:600;color:var(--gold);letter-spacing:0.1em;margin-bottom:8px}
+.qual-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:5px;line-height:1.2}
+.qual-org{font-size:12px;color:var(--muted);margin-bottom:12px}
+.qual-detail{font-size:13px;color:var(--ink2);line-height:1.65}
+
+/* KONTAKT */
+.contact{background:var(--ink)}
+.contact-inner{max-width:660px;margin:0 auto;text-align:center;}
+.contact .eyebrow{color:var(--gold);justify-content:center;display:flex}
+.contact .section-title{color:white;text-align:center}
+.contact-sub{font-size:16px;color:rgba(255,255,255,0.38);line-height:1.8;margin:16px auto 44px;max-width:440px}
+.contact-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:36px;}
+.contact-link{display:flex;align-items:center;gap:9px;padding:14px 26px;border-radius:4px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;min-height:48px;}
+.contact-link.email{background:var(--gold);color:var(--ink)}
+.contact-link.email:hover{background:#c9a84c;transform:translateY(-1px)}
+.contact-link.secondary{background:rgba(255,255,255,0.07);color:white;border:1px solid rgba(255,255,255,0.1)}
+.contact-link.secondary:hover{background:rgba(255,255,255,0.12)}
+.contact-link svg{width:17px;height:17px;flex-shrink:0}
+.contact-avail{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.28);}
+.avail-dot{width:7px;height:7px;border-radius:50%;background:#4ade80;flex-shrink:0;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+footer{background:#070a0d;padding:24px clamp(24px,5vw,80px);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.18)}
+.footer-links{display:flex;gap:20px}
+.footer-links a{font-size:12px;color:rgba(255,255,255,0.18);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:rgba(255,255,255,0.5)}
+
+.zoom-overlay{position:fixed;inset:0;z-index:500;background:rgba(0,0,0,0.93);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s;}
+.zoom-overlay.open{opacity:1;pointer-events:all}
+.zoom-overlay img{max-width:88vw;max-height:84vh;object-fit:contain;border-radius:4px;display:block}
+.zoom-close{position:absolute;top:20px;right:20px;background:rgba(255,255,255,0.1);border:none;color:white;width:44px;height:44px;border-radius:50%;font-size:20px;cursor:pointer;}
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-right{min-height:55vw;max-height:65vw}
+  .numbers-grid{grid-template-columns:repeat(2,1fr)}
+  .num-item{border-bottom:1px solid rgba(255,255,255,0.08)}
+  .about-grid,.project-card,.project-card.reverse,.case-grid,.own-grid,.sales-grid{grid-template-columns:1fr;direction:ltr}
+  .quals-grid,.digital-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  .hero-stats{grid-template-columns:1fr}
+  .h-stat{border-right:none;border-bottom:1px solid var(--border)}
+  .h-stat:last-child{border-bottom:none}
+  .quals-grid,.digital-grid,.ba-grid{grid-template-columns:1fr}
+  .contact-links{flex-direction:column;align-items:center}
+  .contact-link{width:100%;max-width:320px;justify-content:center;}
+  section{padding:clamp(48px,8vw,80px) clamp(20px,5vw,80px)}
+  .ref3d-section{padding:clamp(48px,8vw,80px) clamp(20px,5vw,80px)}
+}
+.qual-toggle{margin-top:14px;background:none;border:none;font-size:13px;font-weight:600;color:var(--gold);cursor:pointer;padding:0;letter-spacing:0.03em;transition:opacity .2s;}
+.qual-toggle:hover{opacity:0.7}
+.qual-extra{display:none;margin-top:12px;font-size:13px;color:var(--muted);line-height:1.7;border-top:1px solid var(--border);padding-top:12px;}
+.qual-extra.open{display:block}
+.nav-dropdown{position:relative}
+.nav-dropdown-btn{font-size:13px;font-weight:500;color:var(--muted);background:none;border:none;cursor:pointer;display:flex;align-items:center;gap:4px;padding:0;font-family:'Inter',sans-serif;transition:color .2s}
+.nav-dropdown-btn:hover{color:var(--ink)}
+.nav-dropdown-menu{position:absolute;top:calc(100% + 12px);right:0;background:var(--white);border:1px solid var(--border);border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,0.08);min-width:200px;display:none;flex-direction:column;overflow:hidden;}
+.nav-dropdown.open .nav-dropdown-menu{display:flex}
+.nav-dropdown-menu a{padding:12px 18px;font-size:13px;font-weight:500;color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--border);transition:background .15s;display:flex;align-items:center;gap:8px}
+.nav-dropdown-menu a:last-child{border-bottom:none}
+.nav-dropdown-menu a:hover{background:var(--bg)}
+.doc-modal{position:fixed;inset:0;z-index:300;background:rgba(14,16,20,0.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s}
+.doc-modal.open{opacity:1;pointer-events:all}
+.doc-modal-box{background:var(--white);border-radius:8px;max-width:680px;width:90%;max-height:80vh;overflow-y:auto;padding:48px;position:relative}
+.doc-modal-close{position:absolute;top:16px;right:16px;background:var(--bg);border:none;width:36px;height:36px;border-radius:50%;font-size:18px;cursor:pointer;color:var(--muted)}
+.doc-modal h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.doc-modal .doc-meta{font-size:12px;color:var(--muted);margin-bottom:28px;letter-spacing:0.04em}
+.doc-modal p{font-size:14px;color:var(--ink2);line-height:1.85;margin-bottom:14px}
+.fade-in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}
+.js-loaded .fade-in{opacity:0;transform:translateY(20px)}
+.js-loaded .fade-in.visible{opacity:1;transform:none}
+
+/* 3D CARD SECTION */
+.ref3d-section{background:var(--bg);padding:clamp(80px,10vw,130px) clamp(24px,5vw,80px);}
+.ref3d-inner{max-width:900px;margin:0 auto;}
+.section-eyebrow{font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block;}
+.section-h2{font-family:"Cormorant Garamond",serif;font-size:clamp(30px,4vw,50px);font-weight:700;line-height:1.1;color:var(--ink);margin-bottom:14px;}
+.ref-cta-btn{display:none;}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-name">Eduard Beches</a>
+  <div class="nav-links">
+    <a href="#projekte" data-i18n="nav-projekte">Projekte</a>
+    <a href="#konflikt" data-i18n="nav-konflikt">Mängelmanagement</a>
+    <a href="#qualifikation" data-i18n="nav-qual">Qualifikation</a>
+    <a href="#warum-ich" data-i18n="nav-warum">Warum ich</a>
+    <a href="#kontakt" data-i18n="nav-kontakt">Kontakt</a>
+    <div class="nav-dropdown" id="docDropdown">
+      <button class="nav-dropdown-btn" onclick="toggleDropdown()">Dokumente ↓</button>
+      <div class="nav-dropdown-menu">
+        <a href="#" onclick="openDocModal();return false;">📄 Motivationsschreiben</a>
+        <a href="BP1_KG_E_Beches_Dienstzeugnis_signed.pdf" download>📜 Dienstzeugnis</a>
+      </div>
+    </div>
+  </div>
+  <a href="#kontakt" class="nav-cta" data-i18n="nav-cta">Kontakt aufnehmen</a>
+  <div style="display:flex;gap:4px;margin-left:12px">
+    <button onclick="setLang('de')" id="btn-de" style="background:var(--ink);color:white;border:none;padding:6px 10px;border-radius:3px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:0.05em">DE</button>
+    <button onclick="setLang('en')" id="btn-en" style="background:none;color:var(--muted);border:1px solid var(--border);padding:6px 10px;border-radius:3px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:0.05em">EN</button>
+    <button onclick="setLang('ro')" id="btn-ro" style="background:none;color:var(--muted);border:1px solid var(--border);padding:6px 10px;border-radius:3px;font-size:12px;font-weight:700;cursor:pointer;letter-spacing:0.05em">RO</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left fade-in">
+    <div class="hero-eyebrow" data-i18n="hero-eyebrow">Projektleiter · Baumanagement · Baukoordinator · Wien</div>
+    <h1 class="hero-name">Eduard<br><span>Beches</span></h1>
+    <p class="hero-lead"><span data-i18n="hero-lead">Facility Management. Projektleitung. Baumanagement.<br>Seit 8 Jahren beim Bauträger – von der Pike auf.</span></p>
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(184,149,58,0.1);border:1px solid rgba(184,149,58,0.35);padding:7px 16px;border-radius:3px;margin-bottom:18px;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#4ade80;flex-shrink:0;animation:pulse 2s infinite;display:inline-block"></span>
+      <span style="font-size:12px;font-weight:600;color:var(--gold);letter-spacing:0.06em"><span data-i18n="hero-status">Offen für: Projektleiter / Baumanagement · Vollzeit · Wien</span></span>
+    </div>
+    <div class="hero-tags">
+      <span class="hero-tag" data-i18n="hero-tag-1">Erfahrung beim Bauträger</span>
+      <span class="hero-tag" data-i18n="hero-tag-2">Vertrieb & Abschluss</span>
+      <span class="hero-tag" data-i18n="hero-tag-3">Eigene Projekte</span>
+      <span class="hero-tag" data-i18n="hero-tag-4">DE · EN · RO</span>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-num">200<sup>+</sup></div><div class="h-stat-lbl" data-i18n="stat-1-lbl">Wohneinheiten betreut</div></div>
+      <div class="h-stat"><div class="h-stat-num">100<sup>+</sup></div><div class="h-stat-lbl" data-i18n="stat-2-lbl">Schadensfälle gelöst</div></div>
+      <div class="h-stat"><div class="h-stat-num">8</div><div class="h-stat-lbl" data-i18n="stat-3-lbl">Jahre Wohnbau Wien</div></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:24px;max-width:460px">
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:10px 14px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px" data-i18n="quick-avail-lbl">Verfügbar</div>
+        <div style="font-size:13px;font-weight:600;color:var(--ink)" data-i18n="quick-avail-val">Ab sofort</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:10px 14px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px" data-i18n="quick-area-lbl">Einsatzgebiet</div>
+        <div style="font-size:13px;font-weight:600;color:var(--ink)" data-i18n="quick-area-val">Wien · NÖ · Bgld</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:10px 14px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px" data-i18n="quick-lang-lbl">Sprachen</div>
+        <div style="font-size:13px;font-weight:600;color:var(--ink)" data-i18n="quick-lang-val">DE · EN · RO</div>
+      </div>
+      <div style="background:var(--white);border:1px solid var(--border);border-radius:4px;padding:10px 14px;">
+        <div style="font-size:10px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:3px" data-i18n="quick-stat-lbl">Betreut</div>
+        <div style="font-size:13px;font-weight:600;color:var(--ink)" data-i18n="quick-stat-val">100+ Schadensfälle</div>
+      </div>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px;justify-content:center">
+      <a href="Lebenslauf_Eduard_Beches.pdf" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 16px;border-radius:3px;transition:.2s;width:160px" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+        📋 <span data-i18n="doc-cv">Lebenslauf</span>
+      </a>
+      <a href="BP1_KG_E_Beches_Dienstzeugnis_signed.pdf" download style="display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 16px;border-radius:3px;transition:.2s;width:160px" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+        📜 <span data-i18n="doc-zeugnis">Dienstzeugnis</span>
+      </a>
+      <a href="Motivationsschreiben_Eduard_Beches.pdf" download style="display:inline-flex;align-items:center;justify-content:center;gap:6px;font-size:12px;color:var(--muted);text-decoration:none;border:1px solid var(--border);padding:8px 16px;border-radius:3px;transition:.2s;width:160px" onmouseover="this.style.borderColor='var(--gold)';this.style.color='var(--gold)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">
+        📄 <span data-i18n="doc-motiv">Motivationsschreiben</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="Projektleiter_auf_der_Baustelle.png" alt="Eduard Beches" class="hero-photo">
+    <div class="hero-overlay"></div>
+    <div class="hero-credential">
+      <div class="credential-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-.497 3.91 3.745 3.745 0 01-3.91.497A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.745 3.745 0 01-3.91-.497 3.745 3.745 0 01-.497-3.91A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 01.497-3.91 3.745 3.745 0 013.91-.497A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.91.497 3.746 3.746 0 01.497 3.91A3.745 3.745 0 0121 12z"/></svg>
+      </div>
+      <div class="credential-text">
+        <strong data-i18n="credential-strong">Bauträger-Befähigungsprüfung · Module 2 & 1.2 ✓</strong>
+        <span data-i18n="credential-span">Unternehmerprüfung ✓ · 8 Jahre beim Bauträger</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<div class="numbers-band">
+  <div class="numbers-grid fade-in">
+    <div class="num-item"><div class="num-big">200+</div><div class="num-label" data-i18n="num1-lbl">Wohneinheiten<br>in Betreuung</div></div>
+    <div class="num-item"><div class="num-big">100+</div><div class="num-label" data-i18n="num2-lbl">Schadensfälle<br>eigenständig gelöst</div></div>
+    <div class="num-item"><div class="num-big">100 Mio.</div><div class="num-label" data-i18n="num3-lbl">€ Projektvolumen<br>Wien 1. & 3. Bezirk</div></div>
+    <div class="num-item"><div class="num-big">8</div><div class="num-label" data-i18n="num4-lbl">Jahre Erfahrung<br>beim Bauträger</div></div>
+  </div>
+</div>
+
+<!-- REFERENZ-ZITAT -->
+<section style="background:var(--white);padding:clamp(48px,6vw,72px) clamp(24px,5vw,80px)">
+  <div class="inner" style="max-width:780px;text-align:center">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:var(--gold-light);border:1px solid var(--gold-border);border-radius:4px;padding:6px 14px;margin-bottom:24px">
+      <span style="font-size:14px">📜</span>
+      <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold)" data-i18n="quote-source">Dienstzeugnis · Börseplatz 1 GmbH & Co KG · 2025</span>
+    </div>
+    <svg width="32" height="24" viewBox="0 0 32 24" fill="none" style="display:block;margin:0 auto 20px;opacity:0.15"><path d="M0 24V14.4C0 6.4 4.8 1.6 14.4 0l1.6 2.4C10.4 3.6 7.2 6.4 6.4 11.2H12V24H0zm18 0V14.4C18 6.4 22.8 1.6 32.4 0L34 2.4C28.4 3.6 25.2 6.4 24.4 11.2H30V24H18z" fill="currentColor"/></svg>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:clamp(20px,2.5vw,28px);font-style:italic;color:var(--ink);line-height:1.7" data-i18n="quote-text">"Auch unter hohem Zeitdruck erledigte er Aufgaben aufgrund seiner hohen Motivation und Resilienz – und konnte auch in anspruchsvollen Situationen überzeugen."</p>
+  </div>
+</section>
+
+<!-- ÜBER MICH -->
+<section class="about" id="ueber">
+  <div class="inner">
+    <div class="about-grid fade-in">
+      <div class="about-img"><img src="Edi_Bautra_ger_foto_.png" alt="Eduard Beches"></div>
+      <div>
+        <div class="eyebrow" data-i18n="about-eyebrow">Über mich</div>
+        <h2 class="section-title" data-i18n="about-title">Vom Vertrieb<br>zur Projektleitung.</h2>
+        <div class="divider"></div>
+        <div class="about-pillars" style="margin-bottom:18px">
+          <div class="about-pillar"><div class="pillar-dot"></div><span data-i18n="pillar-1">4 Jahre Facility Management + 4 Jahre Projektleitung</span></div>
+          <div class="about-pillar"><div class="pillar-dot"></div><span data-i18n="pillar-2">Bauträgerausbildung abends parallel zur Vollzeittätigkeit</span></div>
+          <div class="about-pillar"><div class="pillar-dot"></div><span data-i18n="pillar-3">Deutsch · Englisch · Rumänisch – direkter Draht zu Firmen auf der Baustelle</span></div>
+        </div>
+        <button class="qual-toggle" onclick="toggleQual(this)" data-i18n-toggle>Details ↓</button>
+        <div class="qual-extra">
+          <p style="margin-bottom:10px"><span data-i18n="about-p1">Ich bin kein Theoretiker. Ich bin jemand der auf der Baustelle steht, Sachverständige koordiniert, Behördenwege kennt und Endkunden durch den gesamten Prozess begleitet hat.</span></p>
+          <p><span data-i18n="about-p2">Was mich von anderen Projektleitern unterscheidet: Ich komme aus dem Vertrieb. Das bedeutet ich kommuniziere klar, denke in Ergebnissen und verstehe was Käufer und Eigentümer wirklich wollen.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJEKTE -->
+<section class="projects" id="projekte">
+  <div class="inner">
+    <div class="fade-in" style="margin-bottom:clamp(48px,6vw,72px)">
+      <div class="eyebrow" data-i18n="projects-eyebrow">Berufliche Projekte</div>
+      <h2 class="section-title" data-i18n="projects-title">Wo ich Wirkung hatte.</h2>
+      <div class="divider"></div>
+      <p class="section-sub" data-i18n="projects-sub2">Beide Projekte im Wiener Luxussegment – verantwortlich für Ergebnis, Übergabe und Qualität.</p>
+    </div>
+    <div class="project-card fade-in">
+      <div>
+        <div class="project-label">Börseplatz 1 GmbH · 2021–2025</div>
+        <h3 class="project-name" data-i18n="proj1-name">The Ambassy</h3>
+        <p class="project-sub" data-i18n="proj1-sub">Projektleiter &amp; Gewährleistungsmanagement · Wien 1. Bezirk</p>
+        <div class="project-facts" style="margin-bottom:18px">
+          <div class="project-fact" data-i18n="fact-a1">100+ Schadensfälle eigenständig analysiert und gelöst</div>
+          <div class="project-fact" data-i18n="fact-a2">Sachverständige HKLS, Bauphysik, Bodenbeläge – Zusammenarbeit mit gerichtlich beeideten und freien Sachverständigen</div>
+          <div class="project-fact" data-i18n="fact-a3">Behörden, Hausverwaltung, Makler – alle Schnittstellen koordiniert</div>
+        </div>
+        <button class="qual-toggle" onclick="toggleQual(this)">Details ↓</button>
+        <div class="qual-extra">
+          <p class="project-desc" data-i18n="proj1-desc" style="margin-bottom:14px">Projektleitung in der Abschluss- und Übergabephase eines Wohn- und Gewerbeprojekts mit 200 Wohneinheiten und 8 Gewerbeeinheiten im 3. Bezirk Wien. Projektvolumen: Teil eines Gesamtvorhabens von über 100 Mio. €.<br><br>Bauherrenvertretung, Gewerkekoordination, Mängelmanagement – zentrale Schnittstelle zwischen Firmen, Behörden, Sachverständigen und Käufern.</p>
+          <div class="project-facts" style="margin-top:10px">
+            <div class="project-fact" data-i18n="fact-a4">Aufbau und Umsetzung eines strukturierten Gewährleistungsmanagements</div>
+            <div class="project-fact" data-i18n="fact-a5">Kranaufstellung behördlich organisiert – Genehmigungen, Straßensperren, Vor-Ort-Koordination</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-top:16px">
+            <img src="ambassy-kran-strasse.png" alt="Kran Straße" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+            <img src="ambassy-kran-dach.png" alt="Kran Dach" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+            <img src="ambassy-aussen.jpeg" alt="The Ambassy Außen" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+          </div>
+          <a href="https://www.theambassy.com/the-ambassy/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:13px;font-weight:600;color:var(--gold);text-decoration:none;" data-i18n="proj-link-ambassy">Projekt ansehen ↗</a>
+        </div>
+      </div>
+      <div class="project-image">
+        <img src="ambassy-eingang.jpeg" alt="The Ambassy Wien" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px 6px 0 0;cursor:pointer" onclick="window.zoomImgs=['ambassy-eingang.jpeg','ambassy-aussen.jpeg','ambassy-kran-strasse.png','ambassy-kran-dach.png','ambassy-dach-rohbau.png'];window.zoomIdx=0;openZoom()">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-top:3px">
+          <img src="ambassy-aussen.jpeg" alt="Ambassy Außen" style="width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer;border-radius:0 0 0 6px" onclick="window.zoomImgs=['ambassy-eingang.jpeg','ambassy-aussen.jpeg','ambassy-kran-strasse.png','ambassy-kran-dach.png','ambassy-dach-rohbau.png'];window.zoomIdx=1;openZoom()">
+          <img src="ambassy-kran-strasse.png" alt="Kran Straße" style="width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer" onclick="window.zoomImgs=['ambassy-eingang.jpeg','ambassy-aussen.jpeg','ambassy-kran-strasse.png','ambassy-kran-dach.png','ambassy-dach-rohbau.png'];window.zoomIdx=2;openZoom()">
+          <img src="ambassy-kran-dach.png" alt="Kran Dach" style="width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer;border-radius:0 0 6px 0" onclick="window.zoomImgs=['ambassy-eingang.jpeg','ambassy-aussen.jpeg','ambassy-kran-strasse.png','ambassy-kran-dach.png','ambassy-dach-rohbau.png'];window.zoomIdx=3;openZoom()">
+        </div>
+        <div class="project-badge">The Ambassy · Wien 1</div>
+      </div>
+    </div>
+    <div class="project-card reverse fade-in">
+      <div>
+        <div class="project-label">Börseplatz 1 GmbH · 2017–2021</div>
+        <h3 class="project-name" data-i18n="proj2-name">Börseplatz 1</h3>
+        <p class="project-sub" data-i18n="proj2-sub">2017–2021 · Facility Management → Baukoordination · Wien 1. Bezirk</p>
+        <div class="project-facts">
+          <div class="project-fact" data-i18n="fact-b0">Börseplatz 1 GmbH war gleichzeitig Bauträger, Bauherr und Investor – volle Perspektive auf alle Projektphasen</div>
+          <div class="project-fact" data-i18n="fact-b1">Behördenabwicklung &amp; Einreichungen mit Magistraten</div>
+          <div class="project-fact" data-i18n="fact-b2">Vertrieb: Vermarktung &amp; Initiierung von Verkaufsprozessen</div>
+          <div class="project-fact" data-i18n="fact-b3">Schnittstelle Projektleitung ↔ alle Projektbeteiligten</div>
+        </div>
+        <button class="qual-toggle" onclick="toggleQual(this)">Details ↓</button>
+        <div class="qual-extra">
+          <p data-i18n="proj2-extra" style="margin-bottom:14px">Mitarbeit bei einem innerstädtischen Wohn- und Gewerbeprojekt (Wien 1) in der Planungs- und Realisierungsphase. Enge Abstimmung mit Projektleitung, Behörden und ausführenden Unternehmen. Grundlage für spätere Übernahme der Projektleitung bei The Ambassy.</p>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px">
+            <img src="boerseplatz-rohbau.png" alt="Börseplatz Rohbau" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+            <img src="boerseplatz-luster.png" alt="Börseplatz fertig" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+          </div>
+          <a href="https://kurier.at/wirtschaft/immobiz/boerseplatz-die-teuerste-wohnung-wiens/400098737" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;margin-top:14px;font-size:13px;font-weight:600;color:var(--gold);text-decoration:none;" data-i18n="proj2-link">📰 Kurier: „Die teuerste Wohnung Wiens" ↗</a>
+        </div>
+      </div>
+      <div class="project-image">
+        <img src="boerseplatz-lobby.png" alt="Börseplatz Wien" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px 6px 0 0;cursor:pointer" onclick="window.zoomImgs=['boerseplatz-lobby.png','boerseplatz-luster.png','boerseplatz-rohbau.png','boerseplatz-bau.png'];window.zoomIdx=0;openZoom()">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:3px;margin-top:3px">
+          <img src="boerseplatz-luster.png" alt="Börseplatz Luster" style="width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer;border-radius:0 0 0 6px" onclick="window.zoomImgs=['boerseplatz-lobby.png','boerseplatz-luster.png','boerseplatz-rohbau.png','boerseplatz-bau.png'];window.zoomIdx=1;openZoom()">
+          <img src="boerseplatz-rohbau.png" alt="Börseplatz Rohbau" style="width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer" onclick="window.zoomImgs=['boerseplatz-lobby.png','boerseplatz-luster.png','boerseplatz-rohbau.png','boerseplatz-bau.png'];window.zoomIdx=2;openZoom()">
+          <img src="boerseplatz-bau.png" alt="Börseplatz Bau" style="width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer;border-radius:0 0 6px 0" onclick="window.zoomImgs=['boerseplatz-lobby.png','boerseplatz-luster.png','boerseplatz-rohbau.png','boerseplatz-bau.png'];window.zoomIdx=3;openZoom()">
+        </div>
+        <div class="project-badge">Börseplatz 1 · Wien 1</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EIGENPROJEKT -->
+<section class="ref3d-section" id="referenzen">
+  <div class="ref3d-inner">
+
+    <div style="max-width:680px;margin:0 auto 56px;text-align:center;">
+      <div class="section-eyebrow" style="display:inline-block;" data-i18n="ref-eyebrow">Eigenprojekt · Wien 1020</div>
+      <h2 class="section-h2" style="margin-bottom:16px;" data-i18n="ref-h2">Eigeninitiative.<br><span style="color:var(--gold)">Selbst umgesetzt.</span></h2>
+      <p style="font-size:16px;color:var(--muted);line-height:1.75;" data-i18n="ref-sub">Von der ersten Schaufel bis zum Einzug. Zimmer wählen, Karte anklicken zum Vergrößern.</p>
+    </div>
+
+    <!-- ZIMMER KARUSSELL -->
+    <div id="room-carousel">
+
+      <!-- Zimmer Navigation -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-bottom:36px;">
+        <button onclick="roomNav(-1)" style="background:none;border:1.5px solid var(--border);border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:20px;color:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;" onmouseover="this.style.borderColor='#c9a84c';this.style.color='#c9a84c'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--navy)'">&#8249;</button>
+        <div style="text-align:center;min-width:160px;">
+          <div id="room-counter" style="font-size:10px;color:var(--gold);font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px;">1 / 5 Räume</div>
+          <div id="room-name" style="font-family:'Playfair Display',serif;font-size:26px;font-weight:700;color:var(--navy);transition:opacity .25s;">Wohnzimmer</div>
+        </div>
+        <button onclick="roomNav(1)" style="background:none;border:1.5px solid var(--border);border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:20px;color:var(--navy);display:flex;align-items:center;justify-content:center;flex-shrink:0;" onmouseover="this.style.borderColor='#c9a84c';this.style.color='#c9a84c'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--navy)'">&#8250;</button>
+      </div>
+
+      <!-- Stage wrapper -->
+      <div style="display:flex;align-items:center;justify-content:center;overflow:visible;padding:20px 0 40px;position:relative;">
+        <div style="display:flex;align-items:flex-end;justify-content:center;width:100%;max-width:900px;gap:0;position:relative;">
+            <div id="vor-hit" style="position:absolute;left:0;top:0;width:28%;height:100%;z-index:50;cursor:pointer;" onclick="window._zoomPhase&&window._zoomPhase('vor')"></div>
+            <div id="wae-hit" style="position:absolute;right:0;top:0;width:28%;height:100%;z-index:50;cursor:pointer;" onclick="window._zoomPhase&&window._zoomPhase('wae')"></div>
+
+          <!-- Peek Left -->
+          <div id="peek-left" onclick="roomNav(-1)" style="flex:0 0 8%;cursor:pointer;opacity:.3;filter:saturate(.4) brightness(.75);transition:opacity .4s,filter .4s;transform:scale(.86);transform-origin:right center;position:relative;z-index:5;" onmouseover="this.style.opacity='.55';this.style.filter='saturate(.7)'" onmouseout="this.style.opacity='.3';this.style.filter='saturate(.4) brightness(.75)'">
+            <div style="aspect-ratio:3/4;border-radius:10px;overflow:hidden;">
+              <img id="peek-left-img" src="vz-nach-1.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div id="peek-left-name" style="font-size:10px;color:var(--muted);text-align:center;margin-top:5px;font-weight:600;"></div>
+          </div>
+
+          <!-- Active 3D Stage -->
+          <div style="flex:1 1 84%;perspective:1000px;display:flex;justify-content:center;padding:0 12px;position:relative;">
+            <div id="c3d-stage" style="position:relative;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;width:min(240px,34vw);height:min(360px,51vw);min-width:160px;min-height:240px;margin:0 auto;transition:-webkit-transform .45s cubic-bezier(.4,0,.2,1),transform .45s cubic-bezier(.4,0,.2,1);pointer-events:none;"></div>
+          </div>
+
+          <!-- Peek Right -->
+          <div id="peek-right" onclick="roomNav(1)" style="flex:0 0 8%;cursor:pointer;opacity:.3;filter:saturate(.4) brightness(.75);transition:opacity .4s,filter .4s;transform:scale(.86);transform-origin:left center;position:relative;z-index:5;" onmouseover="this.style.opacity='.55';this.style.filter='saturate(.7)'" onmouseout="this.style.opacity='.3';this.style.filter='saturate(.4) brightness(.75)'">
+            <div style="aspect-ratio:3/4;border-radius:10px;overflow:hidden;">
+              <img id="peek-right-img" src="kue-nach-3.jpeg" alt="" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+            <div id="peek-right-name" style="font-size:10px;color:var(--muted);text-align:center;margin-top:5px;font-weight:600;"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Dots -->
+      <div id="room-dots" style="display:flex;justify-content:center;gap:7px;margin-bottom:52px;"></div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FALLBEISPIEL -->
+<section class="case" id="fallbeispiel">
+  <div class="inner fade-in">
+    <div class="eyebrow" style="color:var(--gold)" data-i18n="fallbeispiel-eyebrow">Fallbeispiel · Schadensbehebung</div>
+    <h2 class="case-title" data-i18n="case-title">Analyse eines komplexen<br>Wasserschadens.</h2>
+    <div class="case-divider"></div>
+    <p class="case-sub-text" data-i18n="case-sub">So arbeite ich – systematisch, nicht intuitiv. Ein reales Beispiel aus dem Projekt.</p>
+    <div class="case-grid" style="margin-top:48px">
+      <div class="case-steps">
+        <div class="case-step">
+          <div class="step-num">1</div>
+          <div class="step-body"><strong data-i18n="step1-title">Problemidentifikation</strong><p data-i18n="step1-text">Wiederkehrender Wassereintritt im Dachbereich. Ursache unklar – mehrere mögliche Quellen.</p></div>
+        </div>
+        <div class="case-step">
+          <div class="step-num">2</div>
+          <div class="step-body"><strong data-i18n="step2-title">Systematische Untersuchung</strong><p data-i18n="step2-text">Gezielte Probeöffnungen und Flutungstests an Dachrinne und Terrassenflächen zur schrittweisen Eingrenzung.</p></div>
+        </div>
+        <div class="case-step">
+          <div class="step-num">3</div>
+          <div class="step-body"><strong data-i18n="step3-title">Befund</strong><p data-i18n="step3-text">Das Warmdach war dicht. Feuchtigkeit wurde hinter der Dampfsperre festgestellt – ein nicht offensichtlicher Befund.</p></div>
+        </div>
+        <div class="case-step">
+          <div class="step-num">4</div>
+          <div class="step-body"><strong data-i18n="step4-title">Lösung &amp; Umsetzung</strong><p data-i18n="step4-text">Gezielte Maßnahmen in enger Abstimmung mit Fachfirmen und Sachverständigen zur nachhaltigen Behebung.</p></div>
+        </div>
+        <button class="qual-toggle" style="color:rgba(184,149,58,0.8)" onclick="toggleQual(this)">Details ↓</button>
+        <div class="qual-extra" style="border-color:rgba(255,255,255,0.1);color:rgba(255,255,255,0.45)">
+          <span data-i18n="case-extra-detail">Eigenverantwortliche Schadensanalyse · Koordination von Sachverständigen (HKLS, Bauphysik) · Technische Dokumentation und Beweissicherung · Über 100 solcher Fälle abgewickelt</span>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:14px">
+            <img src="schaden-feuchte.png" alt="Feuchtigkeitsmessung 94%" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+            <img src="schaden-terrasse1.png" alt="Terrassenöffnung" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+            <img src="schaden-flutungstest.png" alt="Flutungstest" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+            <img src="schaden-trocknung.png" alt="Trocknungsgeräte" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+          </div>
+        </div>
+      </div>
+      <div class="case-result">
+        <div class="case-result-label" data-i18n="case-result-lbl">Was dieser Fall zeigt</div>
+        <h4 data-i18n="case-result-title">Strukturiertes Denken<br>löst komplexe Probleme.</h4>
+        <p data-i18n="case-result-p">Nicht jeder Schaden ist dort, wo er zu sein scheint. Technisches Verständnis und die richtige Zusammenarbeit mit Experten führen zur nachhaltigen Lösung.</p>
+        <img src="schaden-feuchte.png" alt="Feuchtigkeitsmessung 94% WET" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-top:16px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KONFLIKTMANAGEMENT -->
+<section style="background:var(--white);padding:clamp(80px,10vw,130px) clamp(24px,5vw,80px)" id="konflikt">
+  <div class="inner">
+    <div class="fade-in">
+      <div class="eyebrow" data-i18n="conflict-eyebrow">Bauherrenvertretung &amp; Mängelmanagement</div>
+      <h2 class="section-title" data-i18n="conflict-title">Mängelmanagement.<br>Strukturiert gelöst.</h2>
+      <div class="divider"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);margin-top:clamp(40px,5vw,64px)" class="fade-in">
+      <div>
+        <p style="font-size:16px;color:var(--ink2);line-height:1.85;margin-bottom:20px" data-i18n="conflict-p">Vertretung des Bauherrn in komplexen Mängel- und Schadensfällen – strukturierte Dokumentation, klare Argumentation, nachhaltige Lösungen.</p>
+        <button class="qual-toggle" onclick="toggleQual(this)">Details ↓</button>
+        <div class="qual-extra" data-i18n="conflict-extra">Durch strukturierte Dokumentation und klare Argumentation konnte ich in mehreren Fällen zur Lösung beitragen – auch in strittigen Situationen mit juristischer Beteiligung.<br><br>Fachliche Aufbereitung von Sachverhalten sowie Abstimmung mit Sachverständigen, Juristen und Projektbeteiligten. Beispielhaft: Abwicklung eines Schadensfalls im Bereich Betondeckenkühlung (Leitungsbruch) – inklusive Organisation und Umsetzung der erforderlichen Maßnahmen bis zur Einigung der Parteien. Nachweis einer ordnungsgemäß angebotenen Mängelbehebung als Teil der rechtlichen Klärung.</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div class="sales-item"><h4 data-i18n="conflict-h4-1">Bauherrenvertretung</h4><p data-i18n="conflict-p1">Vertretung gegenüber ausführenden Firmen, Behörden und Sachverständigen – auch in strittigen Situationen.</p></div>
+        <div class="sales-item"><h4 data-i18n="conflict-h4-2">Schadensanalyse &amp; Dokumentation</h4><p data-i18n="conflict-p2">Strukturierte Aufbereitung komplexer Sachverhalte als Grundlage für rechtliche und technische Klärung.</p></div>
+        <div class="sales-item"><h4 data-i18n="conflict-h4-3">Lösungsorientierung</h4><p data-i18n="conflict-p3">Fokus auf Einigung und Umsetzung – nicht nur auf Eskalation.</p></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px">
+          <img src="konflikt-meeting1.png" alt="Besprechung Schadensfälle" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+          <img src="konflikt-meeting2.png" alt="Schadensliste Meeting" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;cursor:pointer" onclick="window.zoomImgs=[this.src];window.zoomIdx=0;openZoom()">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- VERTRIEB -->
+<section class="sales" id="vertrieb">
+  <div class="inner">
+    <div class="fade-in">
+      <div class="eyebrow" data-i18n="sales-eyebrow">Vertrieb &amp; Abschlussstärke</div>
+      <h2 class="section-title" data-i18n="sales-title">Vertrieb.<br>Führung. Abschluss.</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="sales-grid fade-in">
+      <div>
+        <div class="sales-number" style="color:var(--ink)">4,5<span>Mio. €</span></div>
+        <p class="sales-context" style="margin-bottom:8px" data-i18n="sales-hotel-p"><strong data-i18n="sales-hotel-strong">Hotelprojekt erfolgreich vermittelt</strong> – Immobilien-Vertrieb auf dem höchsten Niveau.</p>
+        <p class="sales-context" data-i18n="sales-exp-p">Erfahrung im Verkauf von Immobilienprojekten sowie in der Betreuung von Endkunden über den gesamten Prozess – von der technischen Abstimmung bis zum Kaufvertrag und der Übergabe.</p>
+        <button class="qual-toggle" onclick="toggleQual(this)" style="margin-top:14px">Details ↓</button>
+        <div class="qual-extra" data-i18n="sales-hotel-detail">Im Rahmen meiner Tätigkeit konnte ich unter anderem erfolgreich ein Hotelprojekt im Wert von rund 4,5 Mio. € vermitteln – inklusive Verhandlung einer überdurchschnittlichen Provision.</div>
+      </div>
+      <div class="sales-items">
+        <div class="sales-item"><h4 data-i18n="sales-h4-1">Endkundenbetreuung</h4><p data-i18n="sales-p1">Begleitung vom Erstgespräch über den Kaufvertrag bis zur Schlüsselübergabe.</p></div>
+        <div class="sales-item"><h4 data-i18n="sales-h4-2">Maklerkommunikation</h4><p data-i18n="sales-p2">Schnittstelle zwischen Projektentwickler und Vertriebsteam.</p></div>
+        <div class="sales-item"><h4 data-i18n="sales-h4-3">Abschlussstärke</h4><p data-i18n="sales-p3">Nachgewiesene Abschlussstärke im gehobenen Segment. 8 Jahre Führungserfahrung im Vertrieb.</p></div>
+      </div>
+    </div>
+    <div class="sales-grid fade-in" style="margin-top:24px;padding-top:32px;border-top:1px solid var(--border)">
+      <div>
+        <div class="sales-number" style="font-size:clamp(40px,5vw,64px)">8 J.<span style="font-size:0.45em;color:var(--gold);vertical-align:super">Vertrieb</span></div>
+        <p class="sales-context" data-i18n="sales-context-8j"><strong>8 Jahre Verkauf & Führung</strong> – von XXXLutz (Möbel, Abteilungsleitung) über 1 Jahr als Immobilienmakler bis zum Clubmanagement in Ischgl (42 Mitarbeiter). Diese Basis war kein Umweg – sie ist der Grund warum technische Umsetzung und Kundenkommunikation beim Bauträger zusammenpassen.</p>
+        <button class="qual-toggle" onclick="toggleQual(this)" style="margin-top:14px">Details ↓</button>
+        <div class="qual-extra" data-i18n="sales-ischgl">Club Showarena Ischgl: Saisonbetrieb mit 42 Mitarbeitern – operative Verantwortung, Personalführung, Tagesgeschäft unter Hochdruck. Immobilienmakler: direkter Kontakt zu Bauträgern als Verkaufsseite – Anstoß für den Wechsel auf die andere Seite.</div>
+      </div>
+      <div class="sales-items">
+        <div class="sales-item"><h4 data-i18n="sales-h4-3b">Abschlussstärke</h4><p data-i18n="sales-p4">Tägliche Praxis in Kundengesprächen, Einwandbehandlung und Verhandlung – von Möbeln bis zu Luxusimmobilien.</p></div>
+        <div class="sales-item"><h4 data-i18n="sales-h4-4">Führungserfahrung</h4><p data-i18n="sales-p5">Abteilungsleitung XXXLutz + 42 Mitarbeiter in Ischgl – Verantwortung für Teams unter Druck.</p></div>
+        <div class="sales-item"><h4 data-i18n="sales-h4-5">Immobilien-Vertrieb</h4><p data-i18n="sales-p6">4,5 Mio. € Hotelprojekt vermittelt. Endkundenbetreuung von der Besichtigung bis zum Kaufvertrag.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALIFIKATION -->
+<section class="quals" id="qualifikation">
+  <div class="inner">
+    <div class="fade-in">
+      <div class="eyebrow" data-i18n="qual-eyebrow">Qualifikation</div>
+      <h2 class="section-title" data-i18n="qual-title">Fundament aus Praxis<br>und Prüfung.</h2>
+      <div class="divider"></div>
+    </div>
+    <p class="section-sub fade-in" style="margin-bottom:40px" data-i18n="qual-sub">Bauträger-Befähigungsprüfung zu einem Großteil abgeschlossen – Modul 2 und 1.2 bestanden, Unternehmerprüfung bestanden.</p>
+    <div class="quals-grid fade-in">
+      <div class="qual-card">
+        <div class="qual-year">2025 · WKO Wien</div>
+        <h3 class="qual-title" data-i18n="qual1-title">Befähigungsprüfung Bauträger</h3>
+        <div class="qual-org" data-i18n="qual-org-1">Wirtschaftskammer Wien</div>
+        <ul style="margin-top:14px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+          <li style="display:flex;align-items:baseline;gap:8px;font-size:13px;color:var(--ink2)"><span style="color:var(--gold);font-weight:700">✓</span> <span data-i18n="qual1-li1">Modul 2 · Mündliche Fachprüfung · bestanden</span></li>
+          <li style="display:flex;align-items:baseline;gap:8px;font-size:13px;color:var(--ink2)"><span style="color:var(--gold);font-weight:700">✓</span> <span data-i18n="qual1-li2">Modul 1.2 · Berufsspezifische Fächer · bestanden</span></li>
+          <li style="display:flex;align-items:baseline;gap:8px;font-size:13px;color:var(--ink2)"><span style="color:var(--gold);font-weight:700">→</span> <span data-i18n="qual1-li3">Modul 1.1 · Rechtliche Grundlagen · Abschluss Juni 2026</span></li>
+          <li style="display:flex;align-items:baseline;gap:8px;font-size:12px;color:var(--muted);margin-top:4px;border-top:1px solid var(--border);padding-top:10px"><span data-i18n="qual1-li4">Nach Abschluss: Bauträger-Konzession beantragtbar – Praxisvoraussetzung bereits erfüllt</span></li>
+        </ul>
+      </div>
+      <div class="qual-card">
+        <div class="qual-year">2025 · WKS Salzburg</div>
+        <h3 class="qual-title" data-i18n="qual2-title">Unternehmerprüfung § 25 GewO</h3>
+        <div class="qual-org" data-i18n="qual-org-2">Wirtschaftskammer Salzburg</div>
+        <p class="qual-detail" data-i18n="qual2-detail">Erfolgreich abgeschlossen am 19.09.2025.</p>
+        <button class="qual-toggle" onclick="toggleQual(this)">Details ↓</button>
+        <div class="qual-extra">Ersetzt wesentliche Module der Bauträgerausbildung. 180 Lehreinheiten Unternehmertraining (WIFI Wien) als Vorbereitung absolviert.</div>
+      </div>
+      <div class="qual-card">
+        <div class="qual-year">2023 · WIFI Wien</div>
+        <h3 class="qual-title" data-i18n="qual3-title">Bauträgerausbildung</h3>
+        <div class="qual-org" data-i18n="qual-org-3">WIFI Wien · 132 Lehreinheiten</div>
+        <p class="qual-detail" data-i18n="qual3-detail">Vorbereitung auf die Bauträger-Befähigungsprüfung.</p>
+        <button class="qual-toggle" onclick="toggleQual(this)">Details ↓</button>
+        <div class="qual-extra">Parallel zur Vollzeittätigkeit absolviert. Inhalte: Projektentwicklung, Finanzierung, Bautechnik, Immobilienrecht.</div>
+      </div>
+    </div>
+    <div class="fade-in" style="margin-top:28px">
+      <div class="eyebrow" style="margin-bottom:16px" data-i18n="dig-eyebrow">Digitale Projekte</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+        <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+          <div style="background:var(--ink);padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5)" data-i18n="dig1-type">Kalkulations-Tool</span>
+            <span style="font-size:16px">🧮</span>
+          </div>
+          <div style="padding:14px 16px">
+            <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px" data-i18n="dig1-title">Bauträger-Rechner</div>
+            <div style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px" data-i18n="dig1-desc">Kalkulation von Immobilienprojekten nach §75/76 WBO – Kosten, Finanzierung, Rendite.</div>
+            <a href="https://edisan01.github.io/Baupartner-Wien/" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;" data-i18n="dig-link">Tool ansehen ↗</a>
+          </div>
+        </div>
+        <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+          <div style="background:var(--ink);padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5)" data-i18n="dig2-type">Business Website</span>
+            <span style="font-size:16px">🌐</span>
+          </div>
+          <div style="padding:14px 16px">
+            <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px">WienRäum</div>
+            <div style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px" data-i18n="dig2-desc">Vollständige Business-Website für Räumungsservice Wien – Nav, Leistungen, Kontaktformular.</div>
+            <a href="https://vienna-clearance-site--becheseduard.replit.app" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;" data-i18n="dig-link2">Website ansehen ↗</a>
+          </div>
+        </div>
+        <div style="border:1px solid var(--border);border-radius:6px;overflow:hidden">
+          <div style="background:var(--ink);padding:12px 16px;display:flex;align-items:center;justify-content:space-between">
+            <span style="font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5)" data-i18n="dig3-type">Portfolio Website</span>
+            <span style="font-size:16px">✨</span>
+          </div>
+          <div style="padding:14px 16px">
+            <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:6px">Leila Winkler</div>
+            <div style="font-size:12px;color:var(--muted);line-height:1.6;margin-bottom:12px" data-i18n="dig3-desc">Portfolio-Website für Dienstleister – eigenständig konzipiert und umgesetzt.</div>
+            <a href="https://leilawinkler.com" target="_blank" rel="noopener" style="font-size:12px;font-weight:600;color:var(--gold);text-decoration:none;" data-i18n="dig-link3">Website ansehen ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WARUM ICH -->
+<section id="warum-ich" style="background:var(--ink);padding:clamp(64px,8vw,100px) clamp(24px,5vw,80px)">
+  <div class="inner" style="max-width:760px">
+    <div class="eyebrow" style="color:var(--gold)" data-i18n="warum-eyebrow">Warum ich</div>
+    <h2 class="section-title" style="color:white;margin-bottom:28px" data-i18n="warum-title">Ich lebe diesen Bereich.<br>Das ist kein Job für mich.</h2>
+    <div class="divider" style="background:rgba(184,149,58,0.4)"></div>
+    <p style="font-size:16px;color:rgba(255,255,255,0.6);line-height:1.9;margin-bottom:20px" data-i18n="warum-p1">Ich habe nicht zufällig im Immobilienbereich angefangen. Ich habe mich bewusst dafür entschieden – vom Vertrieb in die Umsetzung, weil mich das wirklich interessiert was hinter den Projekten steckt.</p>
+    <p style="font-size:16px;color:rgba(255,255,255,0.6);line-height:1.9;margin-bottom:20px" data-i18n="warum-p2">Ich habe abends nach der Arbeit die Bauträgerausbildung gemacht – nicht weil ich musste, sondern weil ich verstehen wollte wie Projekte von Anfang bis Ende funktionieren. Das zeigt wie ich arbeite: konsequent, eigenverantwortlich, mit echtem Interesse.</p>
+    <p style="font-size:16px;color:rgba(255,255,255,0.75);line-height:1.9;font-weight:500" data-i18n="warum-p3">Technisches Verständnis, Vertriebsstärke, Branchenerfahrung und drei Sprachen – das ist die Kombination die ich einbringe. Ich freue mich auf ein Gespräch.</p>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="contact-inner fade-in">
+    <div class="eyebrow" data-i18n="contact-eyebrow">Kontakt</div>
+    <h2 class="section-title" data-i18n="contact-title">Schreiben Sie mir.<br>Ich antworte schnell.</h2>
+    <p class="contact-sub" data-i18n="contact-sub">Verfügbar ab sofort. Wien · Niederösterreich · Burgenland. Bereit für ein Gespräch – persönlich oder per Video.</p>
+    <div class="contact-links">
+      <a href="mailto:beches.eduard@gmail.com" class="contact-link email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+        beches.eduard@gmail.com
+      </a>
+      <a href="tel:+436763979539" class="contact-link secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+        +43 676 397 9539
+      </a>
+      <a href="https://www.linkedin.com/in/eduard-beches-a06a24221/" target="_blank" rel="noopener" class="contact-link secondary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+    </div>
+    <div style="display:flex;justify-content:center;gap:10px;margin-bottom:28px;flex-wrap:wrap">
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);padding:6px 16px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:0.08em;">🇦🇹 Deutsch</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);padding:6px 16px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:0.08em;">🇬🇧 Englisch</span>
+      <span style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.7);padding:6px 16px;border-radius:3px;font-size:12px;font-weight:600;letter-spacing:0.08em;">🇷🇴 Rumänisch</span>
+    </div>
+    <div class="contact-avail">
+      <span class="avail-dot"></span>
+      Verfügbar ab sofort · Wien & Umgebung · <a href="http://www.eduardbeches.at" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.4);text-decoration:none;">www.eduardbeches.at</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-copy">© 2026 Eduard Beches · Projektleiter Baumanagement · Wien</div>
+  <div class="footer-links">
+    <a href="mailto:beches.eduard@gmail.com">beches.eduard@gmail.com</a>
+    <a href="tel:+436763979539">+43 676 397 9539</a>
+    <a href="https://www.linkedin.com/in/eduard-beches-a06a24221/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</footer>
+
+<div id="zoom-overlay" style="position:fixed;inset:0;z-index:500;background:rgba(0,0,0,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s;" onclick="closeZoom();">
+  <div style="position:relative;display:flex;align-items:center;gap:16px;">
+    <button id="zoom-prev" onclick="event.stopPropagation();zoomNav(-1)" style="display:none;background:rgba(15,42,74,.85);border:1px solid rgba(201,168,76,.4);color:#c9a84c;border-radius:50%;width:48px;height:48px;font-size:24px;cursor:pointer;flex-shrink:0;align-items:center;justify-content:center;">&#8249;</button>
+    <div style="position:relative;">
+      <img id="zoom-img" src="" style="max-width:82vw;max-height:76vh;object-fit:contain;border-radius:12px;display:block;transition:opacity .15s;">
+    </div>
+    <button id="zoom-next" onclick="event.stopPropagation();zoomNav(1)" style="display:none;background:rgba(15,42,74,.85);border:1px solid rgba(201,168,76,.4);color:#c9a84c;border-radius:50%;width:48px;height:48px;font-size:24px;cursor:pointer;flex-shrink:0;align-items:center;justify-content:center;">&#8250;</button>
+  </div>
+  <div style="margin-top:14px;">
+    <span id="zoom-counter" style="color:rgba(255,255,255,.45);font-size:13px;"></span>
+  </div>
+  <button onclick="closeZoom()" style="position:absolute;top:20px;right:20px;background:rgba(255,255,255,.12);border:none;color:white;width:44px;height:44px;border-radius:50%;font-size:20px;cursor:pointer;">&#10005;</button>
+</div>
+
+<script>
+// room tabs handled by 3D card system above
+// openZoom and closeZoom handled by 3D card system below
+function toggleQual(btn){const ex=btn.nextElementSibling;ex.classList.toggle('open');btn.textContent=ex.classList.contains('open')?'Details ↑':'Details ↓';}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeZoom();});
+window.addEventListener('scroll',()=>{document.querySelector('nav').style.boxShadow=scrollY>10?'0 1px 20px rgba(0,0,0,0.06)':'none';});
+(function(){
+  window.ROOMS = window.ROOMS || [];
+  var ROOMS = window.ROOMS = [
+    { name:'Wohnzimmer',  vor:['wz-vor-1.jpeg','wz-vor-2.jpeg','wz-vor-3.jpeg'], wae:['vz-wae-1.jpeg'], nach:['wz-nach-1.jpeg','wz-nach-2.jpeg','wz-nach-3.jpeg'] },
+    { name:'Küche',       vor:['kue-vor-1.jpeg'], wae:['kue-wae-1.jpeg'], nach:['kue-nach-3.jpeg','kue-nach-4.jpeg','kue-nach-5.jpeg'] },
+    { name:'Bad',         vor:['bad-vor-1.jpeg','bad-vor-2.jpeg'], wae:['bad-vor-2.jpeg'], nach:['bad-nach-1.jpeg','bad-nach-2.jpeg','bad-nach-4.jpeg'] },
+    { name:'Schlafzimmer',vor:['sz-vor-1.png','sz-vor-2.png','sz-vor-3.png'], wae:['sz-vor-3.png'], nach:['sz-nach-1.jpeg'] },
+    { name:'Vorzimmer',   vor:['vz-vor-1.jpeg'], wae:['vz-wae-2.jpeg'], nach:['vz-nach-1.jpeg'] }
+  ];
+  window.ROOM_NAMES = {
+    de: ['Wohnzimmer','Küche','Bad','Schlafzimmer','Vorzimmer'],
+    en: ['Living Room','Kitchen','Bathroom','Bedroom','Hallway'],
+    ro: ['Living','Bucătărie','Baie','Dormitor','Hol']
+  };
+  window.PHASE_LABELS = {
+    de: {vor:'Vorher', wae:'Während', nach:'Nachher'},
+    en: {vor:'Before',  wae:'During',   nach:'After'},
+    ro: {vor:'Înainte', wae:'În timpul', nach:'După'}
+  };
+  window.updateRoomNames = function(lang) {
+    var names = ROOM_NAMES[lang] || ROOM_NAMES.de;
+    ROOMS.forEach(function(r, i) { r.name = names[i]; });
+    // Update phase labels
+    var pl = PHASE_LABELS[lang] || PHASE_LABELS.de;
+    PHASES.forEach(function(ph) { ph.label = pl[ph.key]; });
+    updateCounter(); updatePeeks(); buildCards();
+  };
+  var PHASES = [
+    { key:'vor',  label:'Vorher',  color:'#e05a4a', bg:'rgba(224,90,74,.15)', tx:'-105%', tz:'-140px', ry:'48deg',  zIndex:1 },
+    { key:'wae',  label:'Während', color:'#c9a84c', bg:'rgba(201,168,76,.15)', tx:'105%', tz:'-140px', ry:'-48deg', zIndex:1 },
+    { key:'nach', label:'Nachher', color:'#4caf7d', bg:'rgba(76,175,125,.15)', tx:'0',    tz:'0',      ry:'0deg', gold:true, zIndex:60 }
+  ];
+
+  var activeRoom = 0;
+  var idxMap = { vor:0, wae:0, nach:0 };
+  window.zoomImgs = []; window.zoomIdx = 0; window.zoomColor = '#fff';
+  window._zoomPhase = function(key) {
+    var room = ROOMS[activeRoom];
+    var ph = PHASES.filter(function(p){ return p.key===key; })[0];
+    if (!ph) return;
+    window.zoomImgs = room[key]; window.zoomIdx = 0; window.zoomColor = ph.color;
+    openZoom();
+  };
+  var zoomImgs = [], zoomIdx = 0, zoomColor = '#fff';
+  function buildCards() {
+    var stage = document.getElementById('c3d-stage');
+    if (!stage) { setTimeout(buildCards, 100); return; }
+    stage.innerHTML = '';
+    stage.style.webkitTransform = 'none';
+    stage.style.transform = 'none';
+    var room = ROOMS[activeRoom];
+
+    PHASES.forEach(function(ph) {
+      var imgs = room[ph.key];
+      idxMap[ph.key] = 0;
+
+      // OUTER: handles transform, reflect, click — NO clip-path (would block side cards)
+      var card = document.createElement('div');
+      card.style.cssText =
+        'position:absolute;top:0;left:0;width:100%;height:100%;' +
+        '-webkit-transform:translate3d('+ph.tx+',0,'+ph.tz+') rotateY('+ph.ry+');' +
+        'transform:translate3d('+ph.tx+',0,'+ph.tz+') rotateY('+ph.ry+');' +
+        'pointer-events:all;cursor:pointer;' +
+        'z-index:'+(ph.zIndex || 1)+';' +
+        'transition:-webkit-transform .45s cubic-bezier(.4,0,.2,1),transform .45s cubic-bezier(.4,0,.2,1);' +
+        (ph.gold ? '' : 'filter:brightness(0.82) saturate(0.75);');
+      card.dataset.key = ph.key;
+
+      // INNER: rounded corners + overflow hidden — safe because NOT a preserve-3d child
+      var inner = document.createElement('div');
+      inner.style.cssText =
+        'position:absolute;top:0;left:0;width:100%;height:100%;' +
+        'border-radius:14px;overflow:hidden;' +
+        'box-shadow:'+(ph.gold ? '0 8px 0 2px rgba(201,168,76,.5), 0 12px 0 4px rgba(201,168,76,.25), 0 28px 50px rgba(0,0,0,.45), 0 2px 0 2px rgba(201,168,76,.7)' : '0 6px 0 2px rgba(15,42,74,.35), 0 12px 0 4px rgba(15,42,74,.18), 0 28px 50px rgba(0,0,0,.32)')+';';
+
+      // Image fills inner
+      var img = document.createElement('img');
+      img.src = imgs[0];
+      img.alt = ph.label;
+      img.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;';
+
+      // Gradient overlay
+      var grad = document.createElement('div');
+      grad.style.cssText = 'position:absolute;bottom:0;left:0;right:0;height:55%;' +
+        'background:linear-gradient(to top,rgba(8,22,40,.82),transparent);pointer-events:none;';
+
+      // Label
+      var lw = document.createElement('div');
+      lw.style.cssText = 'position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;pointer-events:none;z-index:2;';
+      var lbl = document.createElement('span');
+      lbl.style.cssText = 'background:'+ph.bg+';border:1px solid '+ph.color+'66;color:'+ph.color+';' +
+        'font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;' +
+        'padding:5px 13px;border-radius:100px;font-family:DM Sans,sans-serif;' +
+        'display:inline-flex;align-items:center;gap:4px;';
+      lbl.innerHTML = ph.gold
+        ? '<span style="font-size:8px">✦</span>'+ph.label+'<span style="font-size:8px">✦</span>'
+        : ph.label;
+      lw.appendChild(lbl);
+
+      inner.appendChild(img);
+      inner.appendChild(grad);
+      inner.appendChild(lw);
+
+      // Click overlay — covers full card, always on top
+      var clickOverlay = document.createElement('div');
+      clickOverlay.style.cssText = 'position:absolute;inset:0;z-index:10;cursor:pointer;';
+      clickOverlay.addEventListener('click', function(e){
+        e.stopPropagation();
+        window.zoomImgs = imgs;
+        window.zoomIdx = idxMap[ph.key];
+        window.zoomColor = ph.color;
+        openZoom();
+      });
+      inner.appendChild(clickOverlay);
+
+      card.appendChild(inner);
+
+      stage.appendChild(card);
+    });
+
+    updatePeeks(); updateDots(); updateCounter();
+  }
+
+  // ── ZOOM ──────────────────────────────────
+  window.openZoom = function openZoom() {
+    var ov=document.getElementById('zoom-overlay');
+    var zi=document.getElementById('zoom-img');
+    var zp=document.getElementById('zoom-prev');
+    var zn=document.getElementById('zoom-next');
+    var zc=document.getElementById('zoom-counter');
+    if(!ov||!zi) return;
+    if (window.zoomImgs && window.zoomImgs.length) { zoomImgs = window.zoomImgs; zoomIdx = window.zoomIdx; }
+    zi.src = zoomImgs[zoomIdx];
+    zi.style.opacity = '1';
+    zp.style.display = zoomImgs.length>1 ? 'flex':'none';
+    zn.style.display = zoomImgs.length>1 ? 'flex':'none';
+    if(zc) zc.textContent = (zoomIdx+1)+' / '+zoomImgs.length;
+    ov.style.setProperty('opacity','1');
+    ov.style.setProperty('pointer-events','all');
+    document.body.style.overflow='hidden';
+  }
+
+  window.zoomNav = function(d) {
+    zoomIdx = (zoomIdx+d+zoomImgs.length)%zoomImgs.length;
+    var zi=document.getElementById('zoom-img');
+    var zc=document.getElementById('zoom-counter');
+    zi.style.opacity='0';
+    setTimeout(function(){ zi.src=zoomImgs[zoomIdx]; zi.style.opacity='1'; },140);
+    if(zc) zc.textContent=(zoomIdx+1)+' / '+zoomImgs.length;
+  };
+
+  window.closeZoom = function() {
+    var ov=document.getElementById('zoom-overlay');
+    if(!ov) return;
+    ov.style.setProperty('opacity','0');
+    ov.style.setProperty('pointer-events','none');
+    document.body.style.overflow='';
+  };
+
+  document.addEventListener('keydown',function(e){
+    var ov=document.getElementById('zoom-overlay');
+    if(!ov||ov.style.pointerEvents==='none') return;
+    if(e.key==='Escape') closeZoom();
+    if(e.key==='ArrowLeft') zoomNav(-1);
+    if(e.key==='ArrowRight') zoomNav(1);
+  });
+
+  // ── ROOM NAV ──────────────────────────────
+  function updatePeeks() {
+    var prev=(activeRoom-1+ROOMS.length)%ROOMS.length;
+    var next=(activeRoom+1)%ROOMS.length;
+    var pl=document.getElementById('peek-left-img'),pr=document.getElementById('peek-right-img');
+    var pln=document.getElementById('peek-left-name'),prn=document.getElementById('peek-right-name');
+    if(pl) pl.src=ROOMS[prev].nach[0];
+    if(pr) pr.src=ROOMS[next].nach[0];
+    if(pln) pln.textContent=ROOMS[prev].name;
+    if(prn) prn.textContent=ROOMS[next].name;
+  }
+
+  function updateCounter() {
+    var n=document.getElementById('room-name'),c=document.getElementById('room-counter');
+    if(c) {
+      var roomWord = {de:'Räume',en:'Rooms',ro:'Camere'};
+      var lang = localStorage.getItem('lang') || 'de';
+      c.textContent=(activeRoom+1)+' / '+ROOMS.length+' '+(roomWord[lang]||'Räume');
+    }
+    if(n){ n.style.opacity='0'; setTimeout(function(){ n.textContent=ROOMS[activeRoom].name; n.style.opacity='1'; },160); }
+  }
+
+  function updateDots() {
+    var el=document.getElementById('room-dots');
+    if(!el) return;
+    el.innerHTML='';
+    ROOMS.forEach(function(r,i){
+      var d=document.createElement('button');
+      d.style.cssText='width:'+(i===activeRoom?'24px':'8px')+';height:8px;border-radius:4px;' +
+        'background:'+(i===activeRoom?'#c9a84c':'#dce4ef')+';border:none;cursor:pointer;padding:0;transition:all .3s;';
+      d.title=r.name;
+      d.onclick=function(){ goToRoom(i); };
+      el.appendChild(d);
+    });
+  }
+
+  function goToRoom(idx) {
+    if(idx===activeRoom) return;
+    activeRoom=idx; idxMap={vor:0,wae:0,nach:0}; buildCards();
+  }
+
+  window.roomNav = function(d) { goToRoom((activeRoom+d+ROOMS.length)%ROOMS.length); };
+
+  window.addEventListener('load', buildCards);
+})();
+</script>
+
+<script>
+document.body.classList.add('js-loaded');
+
+// ── i18n SYSTEM ──────────────────────────────────────────────
+const translations = {
+  de: {
+    'nav-cta': 'Kontakt aufnehmen',
+    'hero-eyebrow': 'Projektleiter · Baumanagement · Baukoordinator · Wien',
+    'hero-lead': 'Facility Management. Projektleitung. Baumanagement.<br>Seit 8 Jahren beim Bauträger – von der Pike auf.',
+    'hero-status': 'Offen für: Projektleiter / Baumanagement · Vollzeit · Wien',
+    'hero-tag-1': 'Erfahrung beim Bauträger',
+    'hero-tag-2': 'Vertrieb & Abschluss',
+    'hero-tag-3': 'Eigene Projekte',
+    'hero-tag-4': 'DE · EN · RO',
+    'stat-1-lbl': 'Wohneinheiten betreut',
+    'stat-2-lbl': 'Schadensfälle gelöst',
+    'stat-3-lbl': 'Jahre beim Bauträger',
+    'quick-avail-lbl': 'Verfügbar',
+    'quick-avail-val': 'Ab sofort',
+    'quick-area-lbl': 'Einsatzgebiet',
+    'quick-area-val': 'Wien · NÖ · Bgld',
+    'quick-lang-lbl': 'Sprachen',
+    'quick-lang-val': 'DE · EN · RO',
+    'quick-stat-lbl': 'Betreut',
+    'quick-stat-val': '100+ Schadensfälle',
+    'btn-contact': 'Kontakt aufnehmen',
+    'btn-cv': 'Lebenslauf',
+    'btn-call': 'Anrufen',
+    'credential-strong': 'Bauträger-Befähigungsprüfung · Module 2 & 1.2 ✓',
+    'credential-span': 'Unternehmerprüfung ✓ · 8 Jahre beim Bauträger',
+    'num-1-lbl': 'Wohneinheiten<br>in Betreuung',
+    'num-2-lbl': 'Schadensfälle<br>eigenständig gelöst',
+    'num-3-lbl': '€ Projektvolumen<br>Wien 1. & 3. Bezirk',
+    'num-4-lbl': 'Jahre Erfahrung<br>beim Bauträger',
+    'quote-text': '„Auch unter hohem Zeitdruck erledigte er Aufgaben aufgrund seiner hohen Motivation und Resilienz – und konnte auch in anspruchsvollen Situationen überzeugen."',
+    'quote-source': 'Dienstzeugnis · Börseplatz 1 GmbH & Co KG · 2025',
+    'about-eyebrow': 'Über mich',
+    'about-title': 'Vom Vertrieb<br>zur Projektleitung.',
+    'about-p1': 'Ich bin kein Theoretiker. Ich bin jemand der auf der Baustelle steht, Sachverständige koordiniert, Behördenwege kennt und Endkunden durch den gesamten Prozess begleitet hat.',
+    'about-p2': 'Was mich von anderen Projektleitern unterscheidet: Ich komme aus dem Vertrieb. Das bedeutet ich kommuniziere klar, denke in Ergebnissen und verstehe was Käufer und Eigentümer wirklich wollen.',
+    'projects-eyebrow': 'Berufliche Projekte',
+    'projects-title': 'Wo ich Wirkung hatte.',
+    'projects-sub': 'Beide Projekte im Wiener Luxussegment – verantwortlich für Ergebnis, Übergabe und Qualität.',
+    'contact-eyebrow': 'Kontakt',
+    'contact-title': 'Schreiben Sie mir.<br>Ich antworte schnell.',
+    'contact-sub': 'Verfügbar ab sofort. Wien · Niederösterreich · Burgenland. Bereit für ein Gespräch – persönlich oder per Video.',
+    'avail-text': 'Verfügbar ab sofort · Wien & Umgebung · ',
+    'warum-eyebrow': 'Warum ich',
+    'warum-title': 'Ich lebe diesen Bereich.<br>Das ist kein Job für mich.',
+    'warum-p1': 'Ich habe nicht zufällig im Immobilienbereich angefangen. Ich habe mich bewusst dafür entschieden – vom Vertrieb in die Umsetzung, weil mich das wirklich interessiert was hinter den Projekten steckt.',
+    'warum-p2': 'Ich habe abends nach der Arbeit die Bauträgerausbildung gemacht – nicht weil ich musste, sondern weil ich verstehen wollte wie Projekte von Anfang bis Ende funktionieren. Das zeigt wie ich arbeite: konsequent, eigenverantwortlich, mit echtem Interesse.',
+    'fallbeispiel-eyebrow': 'Fallbeispiel · Schadensbehebung',
+    'conflict-eyebrow': 'Bauherrenvertretung &amp; Mängelmanagement',
+    'sales-eyebrow': 'Vertrieb &amp; Abschlussstärke',
+    'qual-eyebrow': 'Qualifikation',
+    'case-title': 'Analyse eines komplexen<br>Wasserschadens.',
+    'conflict-title': 'Mängelmanagement.<br>Strukturiert gelöst.',
+    'sales-title': 'Vertrieb.<br>Führung. Abschluss.',
+    'qual-title': 'Fundament aus Praxis<br>und Prüfung.',
+    'proj1-name': 'The Ambassy',
+    'proj2-name': 'Börseplatz 1',
+    'proj1-sub': 'Projektleiter &amp; Gewährleistungsmanagement · Wien 1. Bezirk',
+    'proj2-sub': '2017–2021 · Facility Management → Baukoordination · Wien 1. Bezirk',
+    'proj2-link': '📰 Kurier: „Die teuerste Wohnung Wiens" ↗',
+    'case-sub': 'So arbeite ich – systematisch, nicht intuitiv. Ein reales Beispiel aus dem Projekt.',
+    'qual1-title': 'Befähigungsprüfung Bauträger',
+    'qual2-title': 'Unternehmerprüfung § 25 GewO',
+    'qual3-title': 'Bauträgerausbildung',
+    'projects-sub2': 'Beide Projekte im Wiener Luxussegment – verantwortlich für Ergebnis, Übergabe und Qualität.',
+    'fallbeispiel-eyebrow': 'Fallbeispiel · Schadensbehebung',
+    'case-title': 'Analyse eines komplexen<br>Wasserschadens.',
+    'num1-lbl': 'Wohneinheiten<br>in Betreuung',
+    'num2-lbl': 'Schadensfälle<br>eigenständig gelöst',
+    'num3-lbl': '€ Projektvolumen<br>Wien 1. & 3. Bezirk',
+    'num4-lbl': 'Jahre Erfahrung<br>beim Bauträger',
+    'proj1-label': 'Börseplatz 1 GmbH · 2021–2025',
+    'proj2-label': 'Börseplatz 1 GmbH · 2017–2021',
+    'proj1-desc': 'Projektleitung in der Abschluss- und Übergabephase eines Wohn- und Gewerbeprojekts mit 200 Wohneinheiten und 8 Gewerbeeinheiten im 3. Bezirk Wien. Projektvolumen: Teil eines Gesamtvorhabens von über 100 Mio. €.<br><br>Bauherrenvertretung, Gewerkekoordination, Mängelmanagement – zentrale Schnittstelle zwischen Firmen, Behörden, Sachverständigen und Käufern.',
+    'fact-a1': '100+ Schadensfälle eigenständig analysiert und gelöst',
+    'fact-a2': 'Sachverständige HKLS, Bauphysik, Bodenbeläge – Zusammenarbeit mit gerichtlich beeideten und freien Sachverständigen',
+    'fact-a3': 'Zentrale Schnittstelle zwischen Bauträger, ÖBA, Architekten, Fachfirmen, Endkunden, Sachverständigen & Hausverwaltung',
+    'fact-b0': 'Börseplatz 1 GmbH war gleichzeitig Bauträger, Bauherr und Investor – volle Perspektive auf alle Projektphasen',
+    'fact-b1': 'Behördenabwicklung &amp; Einreichungen mit Magistraten',
+    'fact-b2': 'Vertrieb: Vermarktung &amp; Initiierung von Verkaufsprozessen',
+    'fact-b3': 'Schnittstelle Projektleitung ↔ alle Projektbeteiligten',
+    'conflict-h4-1': 'Bauherrenvertretung',
+    'conflict-h4-2': 'Schadensanalyse &amp; Dokumentation',
+    'conflict-h4-3': 'Lösungsorientierung',
+    'sales-h4-1': 'Endkundenbetreuung',
+    'sales-h4-2': 'Maklerkommunikation',
+    'sales-h4-3': 'Abschlussstärke',
+    'sales-h4-3b': 'Abschlussstärke',
+    'sales-h4-4': 'Führungserfahrung',
+    'sales-h4-5': 'Immobilien-Vertrieb',
+    'qual1-detail': 'Modul 2 (mündliche Fachprüfung) bestanden · Modul 1.2 (berufsspezifische Fächer) bestanden · Modul 1.1 (rechtliche Grundlagen) – Abschluss Juni 2026.',
+    'qual1-li1': 'Modul 2 · Mündliche Fachprüfung · bestanden',
+    'qual1-li2': 'Modul 1.2 · Berufsspezifische Fächer · bestanden',
+    'qual1-li3': 'Modul 1.1 · Rechtliche Grundlagen · Abschluss Juni 2026',
+    'qual1-li4': 'Nach Abschluss: Bauträger-Konzession beantragtbar – Praxisvoraussetzung bereits erfüllt',
+    'qual2-detail': 'Ersetzt wesentliche Module der Bauträgerausbildung. 180 Lehreinheiten Unternehmertraining (WIFI Wien) als Vorbereitung absolviert.',
+    'qual3-detail': 'Parallel zur Vollzeittätigkeit absolviert. Inhalte: Projektentwicklung, Finanzierung, Bautechnik, Immobilienrecht.',
+    'qual-sub': 'Modul 2 und 1.2 bestanden · Modul 1.1 Wiederholungsprüfung Juni 2026 · Unternehmerprüfung bestanden.',
+    'case-result-lbl': 'Was dieser Fall zeigt',
+    'case-result-title': 'Strukturiertes Denken<br>löst komplexe Probleme.',
+    'stat-3-lbl': 'Jahre beim Bauträger',
+    'pillar-1': '4 Jahre Facility Management + 4 Jahre Projektleitung',
+    'pillar-2': 'Bauträgerausbildung abends parallel zur Vollzeittätigkeit',
+    'pillar-3': 'Deutsch · Englisch · Rumänisch – direkter Draht zu Firmen auf der Baustelle',
+    'step1-title': 'Problemidentifikation',
+    'step1-text': 'Wiederkehrender Wassereintritt im Dachbereich. Ursache unklar – mehrere mögliche Quellen.',
+    'step2-title': 'Systematische Untersuchung',
+    'step2-text': 'Gezielte Probeöffnungen und Flutungstests an Dachrinne und Terrassenflächen zur schrittweisen Eingrenzung.',
+    'step3-title': 'Befund',
+    'step3-text': 'Das Warmdach war dicht. Feuchtigkeit wurde hinter der Dampfsperre festgestellt – ein nicht offensichtlicher Befund.',
+    'step4-title': 'Lösung & Umsetzung',
+    'step4-text': 'Gezielte Maßnahmen in enger Abstimmung mit Fachfirmen und Sachverständigen zur nachhaltigen Behebung.',
+    'case-result-h4': 'Strukturiertes Denken<br>löst komplexe Probleme.',
+    'case-result-p': 'Nicht jeder Schaden ist dort, wo er zu sein scheint. Technisches Verständnis und die richtige Zusammenarbeit mit Experten führen zur nachhaltigen Lösung.',
+    'conflict-p': 'Vertretung des Bauherrn in komplexen Mängel- und Schadensfällen – strukturierte Dokumentation, klare Argumentation, nachhaltige Lösungen.',
+    'sales-hotel-strong': 'Hotelprojekt erfolgreich vermittelt',
+    'sales-hotel-p': '<strong data-i18n="sales-hotel-strong">Hotelprojekt erfolgreich vermittelt</strong> – Immobilien-Vertrieb auf dem höchsten Niveau.',
+    'sales-exp-p': 'Erfahrung im Verkauf von Immobilienprojekten sowie in der Betreuung von Endkunden über den gesamten Prozess – von der technischen Abstimmung bis zum Kaufvertrag und der Übergabe.',
+    'nav-projekte': 'Projekte',
+    'nav-konflikt': 'Mängelmanagement',
+    'nav-qual': 'Qualifikation',
+    'nav-warum': 'Warum ich',
+    'nav-kontakt': 'Kontakt',
+    'quick-lang-val': 'DE · EN · RO',
+    'fact-a4': 'Aufbau und Umsetzung eines strukturierten Gewährleistungsmanagements',
+    'fact-a5': 'Kranaufstellung behördlich organisiert – Genehmigungen, Straßensperren, Vor-Ort-Koordination',
+    'proj-link-ambassy': 'Projekt ansehen ↗',
+    'conflict-p1': 'Vertretung gegenüber ausführenden Firmen, Behörden und Sachverständigen – auch in strittigen Situationen.',
+    'conflict-p2': 'Strukturierte Aufbereitung komplexer Sachverhalte als Grundlage für rechtliche und technische Klärung.',
+    'conflict-p3': 'Fokus auf Einigung und Umsetzung – nicht nur auf Eskalation.',
+    'sales-p1': 'Begleitung vom Erstgespräch über den Kaufvertrag bis zur Schlüsselübergabe.',
+    'sales-p2': 'Schnittstelle zwischen Projektentwickler und Vertriebsteam.',
+    'sales-p3': 'Nachgewiesene Abschlussstärke im gehobenen Segment. 8 Jahre Führungserfahrung im Vertrieb.',
+    'sales-context-8j': '<strong>8 Jahre Verkauf & Führung</strong> – von XXXLutz (Möbel, Abteilungsleitung) über 1 Jahr als Immobilienmakler bis zum Clubmanagement in Ischgl (42 Mitarbeiter). Diese Basis war kein Umweg – sie ist der Grund warum technische Umsetzung und Kundenkommunikation beim Bauträger zusammenpassen.',
+    'sales-ischgl': 'Club Showarena Ischgl: Saisonbetrieb mit 42 Mitarbeitern – operative Verantwortung, Personalführung, Tagesgeschäft unter Hochdruck. Immobilienmakler: direkter Kontakt zu Bauträgern als Verkaufsseite – Anstoß für den Wechsel auf die andere Seite.',
+    'sales-p4': 'Tägliche Praxis in Kundengesprächen, Einwandbehandlung und Verhandlung – von Möbeln bis zu Luxusimmobilien.',
+    'sales-p5': 'Abteilungsleitung XXXLutz + 42 Mitarbeiter in Ischgl – Verantwortung für Teams unter Druck.',
+    'sales-p6': '4,5 Mio. € Hotelprojekt vermittelt. Endkundenbetreuung von der Besichtigung bis zum Kaufvertrag.',
+    'sales-hotel-detail': 'Im Rahmen meiner Tätigkeit konnte ich unter anderem erfolgreich ein Hotelprojekt im Wert von rund 4,5 Mio. € vermitteln – inklusive Verhandlung einer überdurchschnittlichen Provision.',
+    'case-extra-detail': 'Eigenverantwortliche Schadensanalyse · Koordination von Sachverständigen (HKLS, Bauphysik) · Technische Dokumentation und Beweissicherung · Über 100 solcher Fälle abgewickelt',
+    'conflict-extra': 'Durch strukturierte Dokumentation und klare Argumentation konnte ich in mehreren Fällen zur Lösung beitragen – auch in strittigen Situationen mit juristischer Beteiligung.<br><br>Fachliche Aufbereitung von Sachverhalten sowie Abstimmung mit Sachverständigen, Juristen und Projektbeteiligten. Beispielhaft: Abwicklung eines Schadensfalls im Bereich Betondeckenkühlung (Leitungsbruch) – inklusive Organisation und Umsetzung der erforderlichen Maßnahmen bis zur Einigung der Parteien.',
+    'proj2-extra': 'Mitarbeit bei einem innerstädtischen Wohn- und Gewerbeprojekt (Wien 1) in der Planungs- und Realisierungsphase. Enge Abstimmung mit Projektleitung, Behörden und ausführenden Unternehmen. Grundlage für spätere Übernahme der Projektleitung bei The Ambassy.',
+    'ref-eyebrow': 'Eigenprojekt · Wien 1020',
+    'ref-h2': 'Eigeninitiative.<br><span style="color:var(--gold)">Selbst umgesetzt.</span>',
+    'ref-sub': 'Von der ersten Schaufel bis zum Einzug. Zimmer wählen, Karte anklicken zum Vergrößern.',
+    'dig-eyebrow': 'Digitale Projekte',
+    'dig1-type': 'Kalkulations-Tool',
+    'dig1-title': 'Bauträger-Rechner',
+    'dig1-desc': 'Kalkulation von Immobilienprojekten nach §75/76 WBO – Kosten, Finanzierung, Rendite.',
+    'dig-link': 'Tool ansehen ↗',
+    'dig2-type': 'Business Website',
+    'dig2-desc': 'Vollständige Business-Website für Räumungsservice Wien – Nav, Leistungen, Kontaktformular.',
+    'dig-link2': 'Website ansehen ↗',
+    'dig3-type': 'Portfolio Website',
+    'dig3-desc': 'Portfolio-Website für Dienstleister – eigenständig konzipiert und umgesetzt.',
+    'dig-link3': 'Website ansehen ↗',
+    'qual-org-1': 'Wirtschaftskammer Wien',
+    'qual-org-2': 'Wirtschaftskammer Salzburg',
+    'qual-org-3': 'WIFI Wien · 132 Lehreinheiten',
+    'doc-cv': 'Lebenslauf',
+    'doc-zeugnis': 'Dienstzeugnis',
+    'doc-motiv': 'Motivationsschreiben',
+    'warum-p3': 'Technisches Verständnis, Vertriebsstärke, Branchenerfahrung und drei Sprachen – das ist die Kombination die ich einbringe. Ich freue mich auf ein Gespräch.',
+  },
+  en: {
+    'nav-cta': 'Get in Touch',
+    'hero-eyebrow': 'Project Manager · Construction Management · Vienna',
+    'hero-lead': 'Facility Management. Project Management. Construction Management.<br>8 years at a real estate developer – from the ground up.',
+    'hero-status': 'Open to: Project Manager / Construction Management · Full-time · Vienna',
+    'hero-tag-1': 'Developer Experience',
+    'hero-tag-2': 'Sales & Closing',
+    'hero-tag-3': 'Own Projects',
+    'hero-tag-4': 'DE · EN · RO',
+    'stat-1-lbl': 'Residential Units Managed',
+    'stat-2-lbl': 'Defect Cases Resolved',
+    'stat-3-lbl': 'Years at Developer',
+    'quick-avail-lbl': 'Available',
+    'quick-avail-val': 'Immediately',
+    'quick-area-lbl': 'Region',
+    'quick-area-val': 'Vienna · Lower Austria',
+    'quick-lang-lbl': 'Languages',
+    'quick-lang-val': 'DE · EN · RO',
+    'quick-stat-lbl': 'Resolved',
+    'quick-stat-val': '100+ Defect Cases',
+    'btn-contact': 'Get in Touch',
+    'btn-cv': 'Download CV',
+    'btn-call': 'Call Now',
+    'credential-strong': 'Real Estate Developer Qualification · Modules 2 & 1.2 ✓',
+    'credential-span': 'Entrepreneur Exam ✓ · 8 Years at Developer',
+    'num-1-lbl': 'Residential Units<br>Under Management',
+    'num-2-lbl': 'Defect Cases<br>Independently Resolved',
+    'num-3-lbl': '€ Project Volume<br>Vienna 1st & 3rd District',
+    'num-4-lbl': 'Years Experience<br>at Real Estate Developer',
+    'quote-text': '"Even under high time pressure, he completed tasks with great motivation and resilience – and was convincing even in demanding situations."',
+    'quote-source': 'Reference Letter · Börseplatz 1 GmbH & Co KG · 2025',
+    'about-eyebrow': 'About Me',
+    'about-title': 'From Sales<br>to Project Management.',
+    'about-p1': 'I am not a theorist. I am someone who is on-site, coordinates expert consultants, knows the regulatory processes and has guided end clients through the entire process.',
+    'about-p2': 'What sets me apart from other project managers: I come from sales. That means I communicate clearly, think in results and understand what buyers and owners really want.',
+    'projects-eyebrow': 'Professional Projects',
+    'projects-title': 'Where I Made an Impact.',
+    'projects-sub': 'Both projects in Vienna\'s luxury segment – responsible for results, handover and quality.',
+    'contact-eyebrow': 'Contact',
+    'contact-title': 'Write to me.<br>I respond quickly.',
+    'contact-sub': 'Available immediately. Vienna · Lower Austria · Burgenland. Ready for a meeting – in person or by video.',
+    'avail-text': 'Available immediately · Vienna & surroundings · ',
+    'warum-eyebrow': 'Why Me',
+    'warum-title': 'This is not just a job for me.<br>I live this industry.',
+    'warum-p1': 'I did not end up in real estate by chance. I made a deliberate decision – moving from sales into execution, because I am genuinely interested in what makes projects work.',
+    'warum-p2': 'I completed the real estate developer training in the evenings after work – not because I had to, but because I wanted to understand how projects work from start to finish. That shows how I work: consistent, self-driven, with genuine interest.',
+    'fallbeispiel-eyebrow': 'Case Study · Defect Resolution',
+    'conflict-eyebrow': 'Client Representation &amp; Defect Management',
+    'sales-eyebrow': 'Sales &amp; Closing Strength',
+    'qual-eyebrow': 'Qualifications',
+    'case-title': 'Analysis of a Complex<br>Water Damage Case.',
+    'conflict-title': 'Defect Management.<br>Resolved Systematically.',
+    'sales-title': 'Sales.<br>Leadership. Closing.',
+    'qual-title': 'Built on Practice<br>and Qualification.',
+    'proj1-name': 'The Ambassy',
+    'proj2-name': 'Börseplatz 1',
+    'proj1-sub': 'Project Manager &amp; Warranty Management · Vienna 1st District',
+    'proj2-sub': '2017–2021 · Facility Management → Construction Coordination · Vienna 1st District',
+    'proj2-link': '📰 Kurier: „The Most Expensive Apartment in Vienna" ↗',
+    'case-sub': 'This is how I work – systematically, not intuitively. A real example from the project.',
+    'qual1-title': 'Real Estate Developer Qualification',
+    'qual2-title': 'Entrepreneur Exam § 25 GewO',
+    'qual3-title': 'Real Estate Developer Training',
+    'qual2-detail': 'Replaces key modules of the developer training. 180 teaching units of entrepreneur training (WIFI Wien) completed as preparation.',
+    'projects-sub2': 'Both projects in Vienna\'s luxury segment – responsible for results, handover and quality.',
+    'fallbeispiel-eyebrow': 'Case Study · Defect Resolution',
+    'case-title': 'Analysis of a Complex<br>Water Damage Case.',
+    'num1-lbl': 'Residential Units<br>Under Management',
+    'num2-lbl': 'Defect Cases<br>Independently Resolved',
+    'num3-lbl': '€ Project Volume<br>Vienna 1st & 3rd District',
+    'num4-lbl': 'Years Experience<br>at Real Estate Developer',
+    'proj1-label': 'Börseplatz 1 GmbH · 2021–2025',
+    'proj2-label': 'Börseplatz 1 GmbH · 2017–2021',
+    'proj1-desc': 'Project management during the completion and handover phase of a residential and commercial project with 200 units and 8 commercial units in Vienna\'s 3rd district. Project volume: part of a total of over €100M.<br><br>Client representation, trade coordination, defect management – central interface between firms, authorities, experts and buyers.',
+    'fact-a1': '100+ defect cases independently analysed and resolved',
+    'fact-a2': 'Expert consultants HVAC, Building Physics, Flooring – collaboration with court-sworn and independent experts',
+    'fact-a3': 'Central interface between developer, site supervisor, architects, contractors, end clients, experts & property management',
+    'fact-b0': 'Börseplatz 1 GmbH was simultaneously developer, client and investor – full perspective on all project phases',
+    'fact-b1': 'Regulatory processing &amp; submissions with municipal authorities',
+    'fact-b2': 'Sales: marketing &amp; initiation of sales processes',
+    'fact-b3': 'Interface: project management ↔ all stakeholders',
+    'conflict-h4-1': 'Client Representation',
+    'conflict-h4-2': 'Damage Analysis &amp; Documentation',
+    'conflict-h4-3': 'Solution-oriented',
+    'sales-h4-1': 'End Client Support',
+    'sales-h4-2': 'Agent Communication',
+    'sales-h4-3': 'Closing Strength',
+    'sales-h4-3b': 'Closing Strength',
+    'sales-h4-4': 'Leadership Experience',
+    'sales-h4-5': 'Real Estate Sales',
+    'qual1-detail': 'Module 2 passed · Module 1.2 passed · Module 1.1 – completion June 2026.',
+    'qual1-li1': 'Module 2 · Oral Professional Exam · passed',
+    'qual1-li2': 'Module 1.2 · Profession-Specific Subjects · passed',
+    'qual1-li3': 'Module 1.1 · Legal Fundamentals · completion June 2026',
+    'qual1-li4': 'Upon completion: developer licence applicable – practical prerequisite already fulfilled',
+    'qual3-detail': 'Completed alongside full-time employment. Topics: project development, financing, construction technology, real estate law.',
+    'qual-sub': 'Module 2 and 1.2 passed · Module 1.1 resit exam June 2026 · Entrepreneur exam passed.',
+    'case-result-lbl': 'What this case shows',
+    'case-result-title': 'Structured thinking<br>solves complex problems.',
+    'stat-3-lbl': 'Years at Developer',
+    'pillar-1': '4 years Facility Management + 4 years Project Management',
+    'pillar-2': 'Developer training completed evenings alongside full-time work',
+    'pillar-3': 'German · English · Romanian – direct communication with site teams',
+    'step1-title': 'Problem Identification',
+    'step1-text': 'Recurring water ingress in the roof area. Cause unclear – multiple possible sources.',
+    'step2-title': 'Systematic Investigation',
+    'step2-text': 'Targeted test openings and flood tests on gutters and terrace surfaces for step-by-step isolation.',
+    'step3-title': 'Findings',
+    'step3-text': 'The warm roof was intact. Moisture was found behind the vapour barrier – a non-obvious finding.',
+    'step4-title': 'Solution & Implementation',
+    'step4-text': 'Targeted measures in close coordination with specialist firms and expert consultants for lasting resolution.',
+    'case-result-h4': 'Structured thinking<br>solves complex problems.',
+    'case-result-p': 'Not every defect is where it appears to be. Technical understanding and the right expert collaboration lead to lasting solutions.',
+    'conflict-p': 'Client representation in complex defect and damage cases – structured documentation, clear argumentation, lasting solutions.',
+    'sales-hotel-strong': 'Hotel project successfully brokered',
+    'sales-hotel-p': '<strong data-i18n="sales-hotel-strong">Hotel project successfully brokered</strong> – real estate sales at the highest level.',
+    'sales-exp-p': 'Experience in selling real estate projects and supporting end clients throughout the entire process – from technical coordination to purchase contract and handover.',
+    'nav-projekte': 'Projects',
+    'nav-konflikt': 'Defect Management',
+    'nav-qual': 'Qualifications',
+    'nav-warum': 'Why Me',
+    'nav-kontakt': 'Contact',
+    'quick-lang-val': 'DE · EN · RO',
+    'fact-a4': 'Development and implementation of structured warranty management',
+    'fact-a5': 'Crane installation organised with authorities – permits, road closures, on-site coordination',
+    'proj-link-ambassy': 'View project ↗',
+    'conflict-p1': 'Representation against contractors, authorities and experts – also in disputed situations.',
+    'conflict-p2': 'Structured preparation of complex facts as a basis for legal and technical clarification.',
+    'conflict-p3': 'Focus on agreement and implementation – not just escalation.',
+    'sales-p1': 'Support from initial consultation through purchase contract to key handover.',
+    'sales-p2': 'Interface between project developer and sales team.',
+    'sales-p3': 'Proven closing strength in the premium segment. 8 years leadership experience in sales.',
+    'sales-context-8j': '<strong>8 Years Sales & Leadership</strong> – from XXXLutz (furniture, department management) to 1 year as real estate agent to club management in Ischgl (42 employees). This background was no detour – it is why technical execution and client communication fit together.',
+    'sales-ischgl': 'Club Showarena Ischgl: seasonal operation with 42 employees – operational responsibility, staff management, daily business under pressure. Real estate agent: direct contact with developers on the sales side – the trigger for switching sides.',
+    'sales-p4': 'Daily practice in client conversations, objection handling and negotiation – from furniture to luxury real estate.',
+    'sales-p5': 'Department management XXXLutz + 42 employees in Ischgl – responsibility for teams under pressure.',
+    'sales-p6': '€4.5M hotel project brokered. End client support from viewing to purchase contract.',
+    'sales-hotel-detail': 'During my work I successfully brokered a hotel project worth around €4.5M – including negotiating an above-average commission.',
+    'case-extra-detail': 'Independent damage analysis · Coordination of expert consultants (HVAC, Building Physics) · Technical documentation and evidence collection · Over 100 such cases handled',
+    'conflict-extra': 'Through structured documentation and clear argumentation I was able to contribute to solutions in several cases – including disputed situations with legal involvement.<br><br>Technical preparation of facts and coordination with experts, lawyers and stakeholders. Example: handling a ceiling cooling damage case (pipe burst) – including organising and implementing measures through to agreement between all parties.',
+    'proj2-extra': 'Involvement in an inner-city residential and commercial project (Vienna 1st) during planning and implementation phase. Close coordination with project management, authorities and contractors. Foundation for later takeover of project management at The Ambassy.',
+    'ref-eyebrow': 'Own Project · Vienna 1020',
+    'ref-h2': 'Own initiative.<br><span style="color:var(--gold)">Self-implemented.</span>',
+    'ref-sub': 'From the first shovel to move-in. Select a room, click the card to zoom in.',
+    'dig-eyebrow': 'Digital Projects',
+    'dig1-type': 'Calculation Tool',
+    'dig1-title': 'Developer Calculator',
+    'dig1-desc': 'Real estate project calculation per §75/76 Vienna Building Code – costs, financing, returns.',
+    'dig-link': 'View tool ↗',
+    'dig2-type': 'Business Website',
+    'dig2-desc': 'Complete business website for Vienna clearance service – nav, services, contact form.',
+    'dig-link2': 'View website ↗',
+    'dig3-type': 'Portfolio Website',
+    'dig3-desc': 'Portfolio website for service provider – independently designed and built.',
+    'dig-link3': 'View website ↗',
+    'qual-org-1': 'Vienna Chamber of Commerce',
+    'qual-org-2': 'Salzburg Chamber of Commerce',
+    'qual-org-3': 'WIFI Vienna · 132 Teaching Units',
+    'doc-cv': 'CV / Resume',
+    'doc-zeugnis': 'Reference Letter',
+    'doc-motiv': 'Cover Letter',
+    'warum-p3': 'Technical understanding, sales strength, industry experience and three languages – that is what I bring to the table. I look forward to a conversation.',
+  },
+  ro: {
+    'nav-cta': 'Contactați-mă',
+    'hero-eyebrow': 'Manager de Proiect · Management Construcții · Viena',
+    'hero-lead': 'Facility Management. Management de Proiect. Management Construcții.<br>8 ani la un dezvoltator imobiliar – de la zero.',
+    'hero-status': 'Disponibil pentru: Manager de Proiect / Management Construcții · Full-time · Viena',
+    'hero-tag-1': 'Experiență la Dezvoltator',
+    'hero-tag-2': 'Vânzări & Negociere',
+    'hero-tag-3': 'Proiecte Proprii',
+    'hero-tag-4': 'DE · EN · RO',
+    'stat-1-lbl': 'Unități Rezidențiale Gestionate',
+    'stat-2-lbl': 'Cazuri de Defecte Rezolvate',
+    'stat-3-lbl': 'Ani la Dezvoltator',
+    'quick-avail-lbl': 'Disponibil',
+    'quick-avail-val': 'Imediat',
+    'quick-area-lbl': 'Regiune',
+    'quick-area-val': 'Viena · Austria Inferioară',
+    'quick-lang-lbl': 'Limbi',
+    'quick-lang-val': 'DE · EN · RO',
+    'quick-stat-lbl': 'Rezolvate',
+    'quick-stat-val': '100+ Cazuri de Defecte',
+    'btn-contact': 'Contactați-mă',
+    'btn-cv': 'Descarcă CV',
+    'btn-call': 'Sunați acum',
+    'credential-strong': 'Calificare Dezvoltator Imobiliar · Modulele 2 & 1.2 ✓',
+    'credential-span': 'Examen Antreprenor ✓ · 8 Ani la Dezvoltator',
+    'num-1-lbl': 'Unități Rezidențiale<br>Gestionate',
+    'num-2-lbl': 'Cazuri de Defecte<br>Rezolvate Independent',
+    'num-3-lbl': '€ Volum Proiect<br>Viena Districtul 1 & 3',
+    'num-4-lbl': 'Ani Experiență<br>la Dezvoltator Imobiliar',
+    'quote-text': '„Chiar și sub presiunea timpului, și-a îndeplinit sarcinile cu motivație și reziliență ridicată – și a fost convingător chiar și în situații solicitante."',
+    'quote-source': 'Scrisoare de Referință · Börseplatz 1 GmbH & Co KG · 2025',
+    'about-eyebrow': 'Despre Mine',
+    'about-title': 'Din Vânzări<br>în Management de Proiect.',
+    'about-p1': 'Nu sunt un teoretician. Sunt cineva care este pe șantier, coordonează experți consultanți, cunoaște procesele de reglementare și a ghidat clienții finali prin întregul proces.',
+    'about-p2': 'Ce mă diferențiază de alți manageri de proiect: vin din vânzări. Asta înseamnă că comunic clar, gândesc în rezultate și înțeleg ce vor cu adevărat cumpărătorii și proprietarii.',
+    'projects-eyebrow': 'Proiecte Profesionale',
+    'projects-title': 'Unde Am Făcut Diferența.',
+    'projects-sub': 'Ambele proiecte în segmentul de lux din Viena – responsabil pentru rezultate, predare și calitate.',
+    'contact-eyebrow': 'Contact',
+    'contact-title': 'Scrieți-mi.<br>Răspund rapid.',
+    'contact-sub': 'Disponibil imediat. Viena · Austria Inferioară · Burgenland. Pregătit pentru o întâlnire – personal sau video.',
+    'avail-text': 'Disponibil imediat · Viena & împrejurimi · ',
+    'warum-eyebrow': 'De Ce Eu',
+    'warum-title': 'Trăiesc acest domeniu.<br>Nu este doar un job pentru mine.',
+    'warum-p1': 'Nu am ajuns întâmplător în imobiliare. Am luat o decizie deliberată – trecând din vânzări în execuție, pentru că mă interesează cu adevărat ce se află în spatele proiectelor.',
+    'warum-p2': 'Am urmat cursurile de formare pentru dezvoltatori imobiliari seara după muncă – nu pentru că trebuia, ci pentru că voiam să înțeleg cum funcționează proiectele de la început până la sfârșit. Asta arată cum lucrez: consecvent, autonom, cu interes real.',
+    'fallbeispiel-eyebrow': 'Studiu de Caz · Rezolvarea Defectelor',
+    'conflict-eyebrow': 'Reprezentarea Clientului &amp; Managementul Defectelor',
+    'sales-eyebrow': 'Vânzări &amp; Forță de Negociere',
+    'qual-eyebrow': 'Calificări',
+    'case-title': 'Analiza unui Caz Complex<br>de Deteriorare prin Apă.',
+    'conflict-title': 'Managementul Defectelor.<br>Rezolvat Sistematic.',
+    'sales-title': 'Vânzări.<br>Conducere. Negociere.',
+    'qual-title': 'Construit pe Practică<br>și Calificare.',
+    'proj1-name': 'The Ambassy',
+    'proj2-name': 'Börseplatz 1',
+    'proj1-sub': 'Manager de Proiect &amp; Management Garanție · Districtul 1 Viena',
+    'proj2-sub': '2017–2021 · Facility Management → Coordonare Construcții · Districtul 1 Viena',
+    'proj2-link': '📰 Kurier: „Cel mai scump apartament din Viena" ↗',
+    'case-sub': 'Așa lucrez eu – sistematic, nu intuitiv. Un exemplu real din proiect.',
+    'qual1-title': 'Calificare Dezvoltator Imobiliar',
+    'qual2-title': 'Examen Antreprenor § 25 GewO',
+    'qual3-title': 'Formare Dezvoltator Imobiliar',
+    'projects-sub2': 'Ambele proiecte în segmentul de lux din Viena – responsabil pentru rezultate, predare și calitate.',
+    'fallbeispiel-eyebrow': 'Studiu de Caz · Rezolvarea Defectelor',
+    'case-title': 'Analiza unui Caz Complex<br>de Deteriorare prin Apă.',
+    'num1-lbl': 'Unități Rezidențiale<br>Gestionate',
+    'num2-lbl': 'Cazuri de Defecte<br>Rezolvate Independent',
+    'num3-lbl': '€ Volum Proiect<br>Viena Districtul 1 &amp; 3',
+    'num4-lbl': 'Ani Experiență<br>la Dezvoltator Imobiliar',
+    'proj1-label': 'Börseplatz 1 GmbH · 2021–2025',
+    'proj2-label': 'Börseplatz 1 GmbH · 2017–2021',
+    'proj1-desc': 'Managementul proiectului în faza de finalizare și predare a unui proiect rezidențial și comercial cu 200 de unități și 8 unități comerciale în districtul 3 din Viena. Volum proiect: parte dintr-un total de peste 100 mil. €.<br><br>Reprezentarea clientului, coordonarea meșteșugarilor, managementul defectelor – interfață centrală între firme, autorități, experți și cumpărători.',
+    'fact-a1': '100+ cazuri de defecte analizate și rezolvate independent',
+    'fact-a2': 'Experți HVAC, Fizica Construcțiilor, Pardoseli – colaborare cu experți judiciari și independenți',
+    'fact-a3': 'Interfață centrală între dezvoltator, supraveghetor șantier, arhitecți, firme executante, clienți finali, experți & administrarea proprietății',
+    'fact-b0': 'Börseplatz 1 GmbH a fost simultan dezvoltator, client și investitor – perspectivă completă asupra tuturor fazelor',
+    'fact-b1': 'Procesare reglementară &amp; depuneri la autoritățile municipale',
+    'fact-b2': 'Vânzări: marketing &amp; inițierea proceselor de vânzare',
+    'fact-b3': 'Interfață: management proiect ↔ toți participanții',
+    'conflict-h4-1': 'Reprezentarea Clientului',
+    'conflict-h4-2': 'Analiza Daunelor &amp; Documentare',
+    'conflict-h4-3': 'Orientat spre Soluții',
+    'sales-h4-1': 'Asistență Clienți Finali',
+    'sales-h4-2': 'Comunicare cu Agenții',
+    'sales-h4-3': 'Forță de Negociere',
+    'sales-h4-3b': 'Forță de Negociere',
+    'sales-h4-4': 'Experiență în Conducere',
+    'sales-h4-5': 'Vânzări Imobiliare',
+    'qual1-detail': 'Modulul 2 promovat · Modulul 1.2 promovat · Modulul 1.1 – finalizare iunie 2026.',
+    'qual1-li1': 'Modulul 2 · Examen Oral Profesional · promovat',
+    'qual1-li2': 'Modulul 1.2 · Materii Specifice Profesiei · promovat',
+    'qual1-li3': 'Modulul 1.1 · Bazele Juridice · finalizare iunie 2026',
+    'qual1-li4': 'După finalizare: concesia de dezvoltator poate fi solicitată – condiția de practică deja îndeplinită',
+    'qual2-detail': 'Înlocuiește module esențiale ale formării de dezvoltator imobiliar. 180 unități didactice de formare antreprenorială (WIFI Viena) absolvite ca pregătire.',
+    'qual3-detail': 'Absolvit paralel cu activitatea full-time. Conținut: dezvoltare proiecte, finanțare, tehnică construcții, drept imobiliar.',
+    'qual-sub': 'Modulul 2 și 1.2 promovate · Modulul 1.1 examen de repetare iunie 2026 · Examen antreprenor promovat.',
+    'case-result-lbl': 'Ce arată acest caz',
+    'case-result-title': 'Gândirea structurată<br>rezolvă probleme complexe.',
+    'stat-3-lbl': 'Ani la Dezvoltator',
+    'pillar-1': '4 ani Facility Management + 4 ani Management de Proiect',
+    'pillar-2': 'Formare dezvoltator imobiliar seara, paralel cu activitatea full-time',
+    'pillar-3': 'Germană · Engleză · Română – comunicare directă cu echipele de pe șantier',
+    'step1-title': 'Identificarea Problemei',
+    'step1-text': 'Infiltrații recurente de apă în zona acoperișului. Cauza neclară – mai multe surse posibile.',
+    'step2-title': 'Investigare Sistematică',
+    'step2-text': 'Deschideri de test și teste de inundare pe jgheaburi și suprafețe de terasă pentru izolarea treptată.',
+    'step3-title': 'Constatări',
+    'step3-text': 'Acoperișul cald era etanș. Umiditatea a fost găsită în spatele barierei de vapori – o constatare neevidentă.',
+    'step4-title': 'Soluție & Implementare',
+    'step4-text': 'Măsuri țintite în strânsă coordonare cu firme specializate și experți consultanți pentru rezolvare durabilă.',
+    'case-result-h4': 'Gândirea structurată<br>rezolvă probleme complexe.',
+    'case-result-p': 'Nu orice defect se află acolo unde pare. Înțelegerea tehnică și colaborarea cu experții potriviți duc la soluții durabile.',
+    'conflict-p': 'Reprezentarea clientului în cazuri complexe de defecte și daune – documentare structurată, argumentare clară, soluții durabile.',
+    'sales-hotel-strong': 'Proiect hotelier brokerit cu succes',
+    'sales-hotel-p': '<strong data-i18n="sales-hotel-strong">Proiect hotelier brokerit cu succes</strong> – vânzări imobiliare la cel mai înalt nivel.',
+    'sales-exp-p': 'Experiență în vânzarea proiectelor imobiliare și asistarea clienților finali pe tot parcursul procesului – de la coordonarea tehnică până la contractul de vânzare-cumpărare și predare.',
+    'nav-projekte': 'Proiecte',
+    'nav-konflikt': 'Management Defecte',
+    'nav-qual': 'Calificări',
+    'nav-warum': 'De Ce Eu',
+    'nav-kontakt': 'Contact',
+    'quick-lang-val': 'DE · EN · RO',
+    'fact-a4': 'Dezvoltarea și implementarea unui management structurat al garanției',
+    'fact-a5': 'Instalarea macaralei organizată cu autoritățile – autorizații, închideri de drumuri, coordonare la fața locului',
+    'proj-link-ambassy': 'Vezi proiectul ↗',
+    'conflict-p1': 'Reprezentare față de antreprenori, autorități și experți – inclusiv în situații disputate.',
+    'conflict-p2': 'Pregătirea structurată a faptelor complexe ca bază pentru clarificări juridice și tehnice.',
+    'conflict-p3': 'Focus pe acord și implementare – nu doar pe escaladare.',
+    'sales-p1': 'Asistență de la consultarea inițială prin contractul de vânzare-cumpărare până la predarea cheilor.',
+    'sales-p2': 'Interfață între dezvoltatorul de proiect și echipa de vânzări.',
+    'sales-p3': 'Forță de negociere dovedită în segmentul premium. 8 ani de experiență în conducerea vânzărilor.',
+    'sales-context-8j': '<strong>8 Ani Vânzări & Conducere</strong> – de la XXXLutz (mobilă, conducere departament) la 1 an agent imobiliar până la managementul clubului în Ischgl (42 angajați). Această bază nu a fost un ocol – este motivul pentru care execuția tehnică și comunicarea cu clienții se potrivesc.',
+    'sales-ischgl': 'Club Showarena Ischgl: operațiune sezonieră cu 42 de angajați – responsabilitate operațională, management personal, activitate zilnică sub presiune. Agent imobiliar: contact direct cu dezvoltatorii din partea vânzărilor – declanșatorul pentru schimbarea de parte.',
+    'sales-p4': 'Practică zilnică în conversații cu clienții, gestionarea obiecțiilor și negociere – de la mobilă la imobiliare de lux.',
+    'sales-p5': 'Conducerea departamentului XXXLutz + 42 de angajați în Ischgl – responsabilitate pentru echipe sub presiune.',
+    'sales-p6': 'Proiect hotelier de 4,5 mil. € brokerit. Asistență clienți finali de la vizionare până la contractul de vânzare.',
+    'sales-hotel-detail': 'În activitatea mea am brokerit cu succes un proiect hotelier în valoare de aproximativ 4,5 mil. € – inclusiv negocierea unui comision peste medie.',
+    'case-extra-detail': 'Analiză independentă a daunelor · Coordonarea experților (HVAC, Fizica Construcțiilor) · Documentare tehnică și colectare dovezi · Peste 100 de astfel de cazuri gestionate',
+    'conflict-extra': 'Prin documentare structurată și argumentare clară am contribuit la soluții în mai multe cazuri – inclusiv situații disputate cu implicare juridică.<br><br>Pregătirea tehnică a faptelor și coordonarea cu experți, avocați și părți interesate. Exemplu: gestionarea unui caz de deteriorare prin conductă – inclusiv organizarea și implementarea măsurilor până la acordul dintre toate părțile.',
+    'proj2-extra': 'Participare la un proiect rezidențial și comercial în centrul orașului (Viena 1) în faza de planificare și realizare. Coordonare strânsă cu managementul proiectului, autoritățile și antreprenorii. Baza pentru preluarea ulterioară a managementului la The Ambassy.',
+    'ref-eyebrow': 'Proiect Propriu · Viena 1020',
+    'ref-h2': 'Inițiativă proprie.<br><span style="color:var(--gold)">Realizat personal.</span>',
+    'ref-sub': 'De la prima lopată până la mutare. Selectați o cameră, faceți clic pe card pentru a mări.',
+    'dig-eyebrow': 'Proiecte Digitale',
+    'dig1-type': 'Instrument de Calcul',
+    'dig1-title': 'Calculator Dezvoltator',
+    'dig1-desc': 'Calculul proiectelor imobiliare conform §75/76 WBO – costuri, finanțare, randament.',
+    'dig-link': 'Vezi tool ↗',
+    'dig2-type': 'Website Business',
+    'dig2-desc': 'Website complet pentru servicii de golire Wien – navigare, servicii, formular contact.',
+    'dig-link2': 'Vezi website ↗',
+    'dig3-type': 'Website Portofoliu',
+    'dig3-desc': 'Website portofoliu pentru furnizor de servicii – conceput și realizat independent.',
+    'dig-link3': 'Vezi website ↗',
+    'qual-org-1': 'Camera de Comerț Viena',
+    'qual-org-2': 'Camera de Comerț Salzburg',
+    'qual-org-3': 'WIFI Viena · 132 Unități Didactice',
+    'doc-cv': 'CV',
+    'doc-zeugnis': 'Scrisoare de Referință',
+    'doc-motiv': 'Scrisoare de Motivație',
+    'warum-p3': 'Înțelegere tehnică, abilități de vânzare, experiență în industrie și trei limbi – aceasta este combinația pe care o aduc. Aștept cu nerăbdare o conversație.',
+  }
+};
+
+function setLang(lang) {
+  ['de','en','ro'].forEach(l => {
+    const btn = document.getElementById('btn-'+l);
+    if (!btn) return;
+    btn.style.background = lang===l ? 'var(--ink)' : 'none';
+    btn.style.color = lang===l ? 'white' : 'var(--muted)';
+    btn.style.border = lang===l ? 'none' : '1px solid var(--border)';
+  });
+
+  const t = translations[lang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (t[key]) el.innerHTML = t[key];
+  });
+
+  // Update 3D card room names and phase labels
+  if (window.updateRoomNames) window.updateRoomNames(lang);
+
+  localStorage.setItem('lang', lang);
+}
+
+// Apply saved or default language after DOM ready
+document.addEventListener('DOMContentLoaded', function() {
+  setLang(localStorage.getItem('lang') || 'de');
+});
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:0.08});
+document.querySelectorAll('.fade-in').forEach(el=>obs.observe(el));
+</script>
+<!-- MOTIVATIONSSCHREIBEN MODAL -->
+<div class="doc-modal" id="docModal" onclick="if(event.target===this)closeDocModal()">
+  <div class="doc-modal-box">
+    <button class="doc-modal-close" onclick="closeDocModal()">✕</button>
+    <h3>Motivationsschreiben</h3>
+    <div class="doc-meta">Eduard Beches · Projektleiter Wohnbau · Wien</div>
+    <p>Sehr geehrte Damen und Herren,</p>
+    <p>ich habe 8 Jahre lang Immobilien verkauft – zuerst als Makler, dann im Vertrieb für einen der bekanntesten Bauträger Wiens. Irgendwann habe ich mich gefragt: An wen verkaufe ich eigentlich? An Bauträger. Die machen das wirklich interessante Geschäft.</p>
+    <p>Also habe ich die Seite gewechselt. Seit 2017 bin ich bei der Börseplatz 1 GmbH & Co KG – zuerst im Facility Management, dann als Projektleiter. In dieser Zeit habe ich über 200 Wohneinheiten betreut, mehr als 100 Schadensfälle eigenständig gelöst und den Bauherrn bei zwei Luxusprojekten im 1. und 3. Bezirk Wien mit einem Gesamtvolumen von über 100 Mio. € vertreten.</p>
+    <p>Was mich von einem klassischen Projektleiter unterscheidet: Ich denke unternehmerisch, nicht nur ausführend. Ich verstehe Vertrieb, Technik und Kommunikation – und spreche Deutsch, Englisch und Rumänisch, was auf Wiener Baustellen täglich ein Vorteil ist.</p>
+    <p>Parallel zur Vollzeittätigkeit habe ich abends die Bauträgerausbildung absolviert (132 Lehreinheiten) und die Unternehmerprüfung bestanden – weil mir dieser Weg wichtig ist und ich ihn konsequent gehe.</p>
+    <p>Ich bin ab sofort verfügbar und freue mich auf ein persönliches Gespräch.</p>
+    <p>Mit freundlichen Grüßen<br><strong>Eduard Beches</strong></p>
+  </div>
+</div>
+
+<script>
+function toggleDropdown(){document.getElementById('docDropdown').classList.toggle('open')}
+document.addEventListener('click',e=>{if(!document.getElementById('docDropdown').contains(e.target))document.getElementById('docDropdown').classList.remove('open')});
+function openDocModal(){document.getElementById('docModal').classList.add('open');document.body.style.overflow='hidden';document.getElementById('docDropdown').classList.remove('open')}
+function closeDocModal(){document.getElementById('docModal').classList.remove('open');document.body.style.overflow=''}
+</script>
+</body>
+</html>
